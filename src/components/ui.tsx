@@ -169,7 +169,7 @@ export function WordTile({ word }: { word: string }) {
   );
 }
 
-/** Solid card with faint diagonal stripes and a thick white border. */
+/** Full-bleed solid card with faint diagonal stripes. */
 export function StripedCard({
   color,
   children,
@@ -191,17 +191,17 @@ export function StripedCard({
 
 const styles = StyleSheet.create({
   posterShadow: {
-    aspectRatio: 2 / 3,
-    borderRadius: 8,
-    shadowColor: '#000',
-    shadowOpacity: 0.3,
-    shadowRadius: 6,
+    aspectRatio: 0.74,
+    borderRadius: 16,
+    shadowColor: '#0A2A55',
+    shadowOpacity: 0.22,
+    shadowRadius: 8,
     shadowOffset: { width: 0, height: 4 },
-    elevation: 6,
+    elevation: 4,
   },
   poster: {
     flex: 1,
-    borderRadius: 8,
+    borderRadius: 16,
     overflow: 'hidden',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -213,12 +213,12 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     right: 0,
-    paddingHorizontal: 7,
-    paddingVertical: 3,
-    borderBottomLeftRadius: 8,
+    paddingHorizontal: 9,
+    paddingVertical: 4,
+    borderBottomLeftRadius: 12,
     zIndex: 1,
   },
-  badgeText: { fontFamily: fonts.heavy, color: colors.white, letterSpacing: 0.5 },
+  badgeText: { fontFamily: fonts.bold, color: colors.white, letterSpacing: 0.4 },
   posterTitle: {
     fontFamily: fonts.display,
     color: colors.white,
@@ -228,8 +228,8 @@ const styles = StyleSheet.create({
     textShadowRadius: 3,
   },
   newPoster: {
-    aspectRatio: 2 / 3,
-    borderRadius: 8,
+    aspectRatio: 0.74,
+    borderRadius: 16,
     borderWidth: 3,
     borderStyle: 'dashed',
     borderColor: 'rgba(255,255,255,0.8)',
@@ -306,9 +306,6 @@ const styles = StyleSheet.create({
   },
   gameCard: {
     flex: 1,
-    borderRadius: 34,
-    borderWidth: 10,
-    borderColor: colors.white,
     overflow: 'hidden',
     alignItems: 'center',
     justifyContent: 'center',

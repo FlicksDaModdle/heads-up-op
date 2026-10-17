@@ -94,7 +94,8 @@ export function GameScreen({
   };
 
   const startRound = () => {
-    detector.current.reset();
+    // Whatever pose the player settled into during the countdown is neutral.
+    detector.current.calibrate();
     buzz(() => Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium));
     go('playing');
     let left = roundSeconds;
@@ -152,13 +153,13 @@ export function GameScreen({
     };
   }, []);
 
-  // Tilt input. iOS reports Z with the opposite sign to Android.
+  // Tilt input. iOS reports every axis with the opposite sign to Android.
   useEffect(() => {
     if (Platform.OS === 'web') return;
     const sign = Platform.OS === 'ios' ? -1 : 1;
-    Accelerometer.setUpdateInterval(40);
-    const sub = Accelerometer.addListener(({ z }) => {
-      const action = detector.current.addSample(sign * z);
+    Accelerometer.setUpdateInterval(30);
+    const sub = Accelerometer.addListener(({ x, y, z }) => {
+      const action = detector.current.addSample(sign * x, sign * y, sign * z);
       if (phaseRef.current === 'ready' && detector.current.isUpright) startCountdown();
       else if (phaseRef.current === 'playing' && action) answer(action === 'correct');
     });
@@ -195,24 +196,25 @@ export function GameScreen({
   const clockText = `${Math.floor(secondsLeft / 60)}:${String(secondsLeft % 60).padStart(2, '0')}`;
 
   return (
-    <View
-      style={[
-        styles.screen,
-        {
-          paddingTop: insets.top + 8,
-          paddingBottom: insets.bottom + 8,
-          paddingLeft: insets.left + 8,
-          paddingRight: insets.right + 8,
-        },
-      ]}
-    >
+    <View style={styles.screen}>
       <Pressable
         style={{ flex: 1 }}
         onPress={onTap}
         accessibilityLabel="Game card"
       >
         <StripedCard color={cardColor}>
-          <View style={styles.center}>
+          {/* The card fills the screen; insets keep the text clear of notches. */}
+          <View
+            style={[
+              styles.center,
+              {
+                paddingTop: insets.top + 56,
+                paddingBottom: insets.bottom + 56,
+                paddingLeft: insets.left + 50,
+                paddingRight: insets.right + 50,
+              },
+            ]}
+          >
             {phase === 'ready' && big('Place on\nForehead', 96)}
             {phase === 'countdown' && (
               <>
@@ -225,18 +227,20 @@ export function GameScreen({
             {phase === 'timesUp' && big("Time's Up!", 120)}
           </View>
           {phase === 'ready' && (
-            <Text style={styles.hint}>
+            <Text style={[styles.hint, { bottom: insets.bottom + 18 }]}>
               Tilt down = correct · Tilt up = pass · or tap to start
             </Text>
           )}
           {showTimer && (
-            <Text style={[styles.timer, warning && styles.timerWarn]}>{clockText}</Text>
+            <Text style={[styles.timer, { top: insets.top + 14 }, warning && styles.timerWarn]}>
+              {clockText}
+            </Text>
           )}
         </StripedCard>
       </Pressable>
       <Pressable
         onPress={onQuit}
-        style={[styles.quit, { top: insets.top + 26, left: insets.left + 26 }]}
+        style={[styles.quit, { top: insets.top + 14, left: insets.left + 16 }]}
         accessibilityRole="button"
         accessibilityLabel="Quit round"
         hitSlop={10}
@@ -253,8 +257,6 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFill,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 50,
-    paddingVertical: 56,
   },
   big: {
     fontFamily: fonts.black,

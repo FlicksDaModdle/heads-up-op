@@ -11,47 +11,82 @@ import { parseWords } from '../src/game/words.ts';
 // No smoothing, so each sample maps directly to the filtered value.
 const detector = () => new TiltDetector({ smoothing: 1 });
 
+/** Feeds a sample for the phone pitched `deg` degrees (negative = screen down). */
+const at = (d: TiltDetector, deg: number, g = 1) => {
+  const r = (deg * Math.PI) / 180;
+  return d.addSample(0, g * Math.cos(r), g * Math.sin(r));
+};
+
 test('ignores tilts until the phone has been upright', () => {
   const d = detector();
-  assert.equal(d.addSample(-1), null);
-  assert.equal(d.addSample(0), null);
-  assert.equal(d.addSample(-1), 'correct');
+  assert.equal(at(d, -60), null);
+  assert.equal(at(d, 0), null);
+  assert.equal(at(d, -60), 'correct');
 });
 
 test('screen down is correct, screen up is pass', () => {
   const d = detector();
-  d.addSample(0);
-  assert.equal(d.addSample(-0.8), 'correct');
-  d.addSample(0.05);
-  assert.equal(d.addSample(0.8), 'pass');
+  at(d, 0);
+  assert.equal(at(d, -35), 'correct');
+  at(d, 5);
+  assert.equal(at(d, 35), 'pass');
 });
 
 test('a held tilt fires only once', () => {
   const d = detector();
-  d.addSample(0);
-  assert.equal(d.addSample(-0.9), 'correct');
-  assert.equal(d.addSample(-0.9), null);
-  assert.equal(d.addSample(-1), null);
+  at(d, 0);
+  assert.equal(at(d, -50), 'correct');
+  assert.equal(at(d, -50), null);
+  assert.equal(at(d, -80), null);
 });
 
 test('small wobbles do not fire', () => {
   const d = detector();
-  for (const z of [0, 0.3, -0.5, 0.65, -0.69, 0.2]) assert.equal(d.addSample(z), null);
+  for (const deg of [0, 10, -20, 25, -29, 5]) assert.equal(at(d, deg), null);
 });
 
 test('reset requires returning upright', () => {
   const d = detector();
-  d.addSample(0);
+  at(d, 0);
   d.reset();
-  assert.equal(d.addSample(-0.9), null);
-  d.addSample(0);
-  assert.equal(d.addSample(-0.9), 'correct');
+  assert.equal(at(d, -50), null);
+  at(d, 0);
+  assert.equal(at(d, -50), 'correct');
 });
 
-test('smoothing filters out a single spike', () => {
+test('calibration makes tilts relative to how the phone is held', () => {
+  const d = detector();
+  at(d, 20); // player holds it tipped back a little
+  d.calibrate();
+  at(d, 20);
+  // 35 degrees down from their pose is correct even though the absolute
+  // pitch is only -15...
+  assert.equal(at(d, -15), 'correct');
+  at(d, 20);
+  // ...and 35 degrees up from it is pass.
+  assert.equal(at(d, 55), 'pass');
+});
+
+test('shaking (stronger or weaker g) does not change the angle', () => {
+  const d = detector();
+  at(d, 0, 1.6);
+  assert.equal(at(d, -20, 1.8), null);
+  assert.equal(at(d, -35, 0.6), 'correct');
+});
+
+test('a phone lying flat cannot be calibrated as neutral', () => {
+  const d = detector();
+  at(d, 90);
+  d.calibrate();
+  at(d, 25);
+  assert.equal(at(d, -10), 'correct'); // baseline was capped at +25
+});
+
+test('smoothing filters out a brief jolt', () => {
   const d = new TiltDetector();
-  d.addSample(0);
-  assert.equal(d.addSample(-1), null);
+  at(d, 0);
+  assert.equal(at(d, -50), null);
+  assert.equal(at(d, 0), null);
 });
 
 test('parseWords splits lines and commas, trims and dedupes', () => {

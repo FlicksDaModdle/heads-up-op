@@ -1,4 +1,6 @@
 export const colors = {
+  /** The single flat page colour, as in the iOS app's deck store. */
+  page: '#3A9BE6',
   sky: '#1E8EF5',
   skyLight: '#2BB8F8',
   skyDeep: '#1565D8',

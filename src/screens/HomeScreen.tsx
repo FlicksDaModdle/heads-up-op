@@ -38,8 +38,8 @@ export function HomeScreen({
   const [expanded, setExpanded] = useState(false);
 
   const pageWidth = Math.min(width, 520);
-  const posterWidth = Math.floor((pageWidth - 40 - 24) / 3.25);
-  const gridPoster = Math.floor((pageWidth - 40 - 24) / 3);
+  const posterWidth = Math.floor((pageWidth - 40 - 32) / 3.2);
+  const gridPoster = Math.floor((pageWidth - 40 - 32) / 3);
 
   const row = (decks: Deck[], lead?: ReactNode) => (
     <ScrollView
@@ -61,7 +61,7 @@ export function HomeScreen({
         style={styles.scroll}
       >
         {/* Hero */}
-        <View style={[styles.section, { backgroundColor: colors.sky, paddingTop: insets.top + 18 }]}>
+        <View style={[styles.section, { paddingTop: insets.top + 18 }]}>
           <View style={styles.sticker}>
             <Text style={styles.stickerText}>100%{'\n'}FREE</Text>
           </View>
@@ -78,7 +78,7 @@ export function HomeScreen({
         </View>
 
         {/* My Decks */}
-        <View style={[styles.section, { backgroundColor: colors.skyLight }]}>
+        <View style={styles.section}>
           <View style={styles.headingRow}>
             <Text style={styles.heading}>My Decks</Text>
             <Pressable
@@ -107,7 +107,7 @@ export function HomeScreen({
         </View>
 
         {/* More Decks */}
-        <View style={[styles.section, { backgroundColor: colors.sky }]}>
+        <View style={styles.section}>
           <Text style={styles.heading}>More Decks</Text>
           <Text style={styles.subheading}>
             {moreDecks.length} more categories, all free!
@@ -120,7 +120,7 @@ export function HomeScreen({
         </View>
 
         {/* Recent rounds */}
-        <View style={[styles.section, { backgroundColor: colors.skyDeep, minHeight: 220 }]}>
+        <View style={[styles.section, { minHeight: 220 }]}>
           <Text style={styles.heading}>Recent Rounds</Text>
           {history.length === 0 ? (
             <View style={styles.emptyCard}>
@@ -166,9 +166,9 @@ export function HomeScreen({
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: colors.skyDeep },
+  screen: { flex: 1, backgroundColor: colors.page },
   scroll: { flex: 1 },
-  section: { paddingHorizontal: 20, paddingVertical: 22 },
+  section: { paddingHorizontal: 20, paddingVertical: 14 },
   sticker: {
     position: 'absolute',
     right: 14,
@@ -203,28 +203,21 @@ const styles = StyleSheet.create({
     textShadowRadius: 0,
   },
   tagline: { fontFamily: fonts.heavy, color: colors.white, fontSize: 17, marginTop: 6 },
-  row: { gap: 12, paddingVertical: 16, paddingRight: 20 },
+  row: { gap: 16, paddingVertical: 14, paddingRight: 20 },
   ctaRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   ctaNote: { fontFamily: fonts.heavy, color: colors.yellow, fontSize: 16, marginTop: 10 },
   headingRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  heading: {
-    fontFamily: fonts.black,
-    color: colors.white,
-    fontSize: 36,
-    textShadowColor: 'rgba(0,0,0,0.12)',
-    textShadowOffset: { width: 0, height: 2 },
-    textShadowRadius: 0,
-  },
+  heading: { fontFamily: fonts.bold, color: colors.white, fontSize: 34 },
   chevron: {
-    width: 34,
-    height: 34,
-    borderRadius: 7,
-    backgroundColor: colors.chip,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: 'rgba(255,255,255,0.25)',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  subheading: { fontFamily: fonts.heavy, color: colors.white, fontSize: 17, marginTop: 2 },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, paddingVertical: 16 },
+  subheading: { fontFamily: fonts.bold, color: 'rgba(255,255,255,0.9)', fontSize: 16, marginTop: 2 },
+  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 16, paddingVertical: 14 },
   emptyCard: {
     marginTop: 14,
     borderRadius: 14,

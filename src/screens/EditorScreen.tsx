@@ -141,7 +141,7 @@ export function EditorScreen({
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: colors.sky },
+  screen: { flex: 1, backgroundColor: colors.page },
   bar: {
     flexDirection: 'row',
     alignItems: 'center',

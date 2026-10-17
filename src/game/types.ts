@@ -12,6 +12,8 @@ export type Deck = {
   /** How to give clues for this deck. */
   blurb: string;
   words: string[];
+  /** Corner ribbon on the poster. */
+  badge?: 'NEW' | 'POPULAR';
   /** Set for decks the player wrote. */
   custom?: boolean;
 };

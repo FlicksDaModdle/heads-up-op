@@ -34,6 +34,18 @@ export function DeckPoster({
       ]}
     >
       <LinearGradient colors={deck.colors} style={styles.poster}>
+        {deck.badge && (
+          <View
+            style={[
+              styles.badge,
+              { backgroundColor: deck.badge === 'NEW' ? '#2F3BF5' : '#F0263C' },
+            ]}
+          >
+            <Text style={[styles.badgeText, { fontSize: Math.max(9, width * 0.085) }]}>
+              {deck.badge}
+            </Text>
+          </View>
+        )}
         <Text style={[styles.posterEmoji, { fontSize: width * 0.48 }]}>
           {deck.emoji}
         </Text>
@@ -197,6 +209,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 6,
   },
   posterEmoji: { marginTop: 6, textAlign: 'center' },
+  badge: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    paddingHorizontal: 7,
+    paddingVertical: 3,
+    borderBottomLeftRadius: 8,
+    zIndex: 1,
+  },
+  badgeText: { fontFamily: fonts.heavy, color: colors.white, letterSpacing: 0.5 },
   posterTitle: {
     fontFamily: fonts.display,
     color: colors.white,

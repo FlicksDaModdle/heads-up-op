@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 
 import { builtInDecks } from '../src/game/decks.ts';
+import { moreDecks } from '../src/game/moreDecks.ts';
 import { TiltDetector } from '../src/game/tilt.ts';
 import { parseWords } from '../src/game/words.ts';
 
@@ -57,12 +58,14 @@ test('parseWords splits lines and commas, trims and dedupes', () => {
   assert.deepEqual(parseWords(' Cat \n\ndog, Bird\ncat\n  ,  '), ['Cat', 'dog', 'Bird']);
 });
 
-test('built-in decks are well formed', () => {
+test('all decks are well formed', () => {
   const ids = new Set<string>();
-  for (const deck of builtInDecks) {
+  for (const deck of [...builtInDecks, ...moreDecks]) {
     assert.ok(!ids.has(deck.id), `duplicate id ${deck.id}`);
     ids.add(deck.id);
+    assert.ok(!deck.words.some((w) => w.includes(',')), `${deck.name} has a comma in a word`);
     assert.ok(deck.words.length >= 20, `${deck.name} has too few words`);
     assert.equal(new Set(deck.words).size, deck.words.length, `${deck.name} has duplicates`);
+    assert.ok(deck.blurb.length > 0 && deck.emoji.length > 0, `${deck.name} is incomplete`);
   }
 });

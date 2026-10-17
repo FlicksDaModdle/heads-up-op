@@ -88,6 +88,17 @@ Each item is described generically, followed by what this project does.
   No accounts. Camera recording is a possible later feature and must be
   opt-in.
 
+### More Decks
+
+- *Observed (from screenshots of a deck store):* a long 3-column grid of
+  extra categories, some tagged "popular" or "new".
+- *Ours:* a **More Decks** grid with 73 extra decks on the same broad
+  themes (decades, sports, holidays, anime, breeds, charades editions and
+  so on). Only the themes carried over: every deck name, blurb and word
+  list is written for this project in `decks/*.txt` and compiled by
+  `tool/build_decks.py`. Single-franchise and licensed decks were left out
+  or made generic, and year-in-review decks were left out.
+
 ### Custom decks (our addition)
 
 - Not taken from the commercial app. The top section of the home screen

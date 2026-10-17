@@ -13,6 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { DeckPanel } from '../components/DeckPanel';
 import { DeckPoster, GreenButton, NewDeckPoster, SquareIconButton } from '../components/ui';
 import { builtInDecks } from '../game/decks';
+import { moreDecks } from '../game/moreDecks';
 import type { Deck, RoundSummary } from '../game/types';
 import { colors, fonts } from '../theme';
 
@@ -103,6 +104,19 @@ export function HomeScreen({
           ) : (
             row(builtInDecks)
           )}
+        </View>
+
+        {/* More Decks */}
+        <View style={[styles.section, { backgroundColor: colors.sky }]}>
+          <Text style={styles.heading}>More Decks</Text>
+          <Text style={styles.subheading}>
+            {moreDecks.length} more categories, all free!
+          </Text>
+          <View style={styles.grid}>
+            {moreDecks.map((d) => (
+              <DeckPoster key={d.id} deck={d} width={gridPoster} onPress={() => setOpen(d)} />
+            ))}
+          </View>
         </View>
 
         {/* Recent rounds */}

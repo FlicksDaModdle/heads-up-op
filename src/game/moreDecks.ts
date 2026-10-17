@@ -1823,6 +1823,32 @@ export const moreDecks: Deck[] = [
       "Pazuzu", "Samara", "Damien", "Regan", "Billy the Puppet",
     ],
   },
+  {
+    id: "world-myths",
+    name: "Mythology",
+    emoji: "🐉",
+    colors: ["#4DD0E1", "#00838F"],
+    panel: "#00838F",
+    ink: '#FFFFFF',
+    badge: "NEW",
+    blurb: "Gods, heroes and monsters from myths around the world. Give clues about their powers and say which culture they come from!",
+    words: [
+      "Odin", "Thor", "Loki", "Freya", "Frigg", "Baldur", "Heimdall", "Tyr", "Hel", "Valhalla",
+      "Valkyrie", "Yggdrasil", "Ragnarok", "Fenrir", "Jörmungandr", "Mjölnir", "Bifröst",
+      "Asgard", "Sleipnir", "Ra", "Osiris", "Isis", "Horus", "Anubis", "Set", "Thoth", "Bastet",
+      "Sekhmet", "Hathor", "Eye of Horus", "Ankh", "Scarab beetle", "Book of the Dead",
+      "Jupiter", "Juno", "Mars the war god", "Venus the goddess", "Neptune the sea god",
+      "Minerva", "Janus", "Cupid", "Romulus and Remus", "Zeus", "Medusa", "Hercules", "Pegasus",
+      "Shiva", "Vishnu", "Brahma", "Ganesha", "Krishna", "Rama", "Hanuman", "Lakshmi", "Durga",
+      "Kali", "Garuda", "Monkey King", "Jade Emperor", "Chang'e", "Nüwa", "Chinese dragon",
+      "Qilin", "Amaterasu", "Susanoo", "Raijin", "Kitsune", "Oni", "Tengu", "Kappa",
+      "Yamata no Orochi", "Leprechaun", "Banshee", "Cú Chulainn", "The Morrígan", "Selkie",
+      "King Arthur", "Merlin", "Excalibur", "Lady of the Lake", "Holy Grail", "Camelot",
+      "Knights of the Round Table", "Quetzalcoatl", "Huitzilopochtli", "Tlaloc", "Kukulcán",
+      "Gilgamesh", "Ishtar", "Marduk", "Tiamat", "Maui", "Pele", "Anansi", "Baba Yaga", "Golem",
+      "Phoenix", "Kraken", "Thunderbird", "Unicorn", "Werewolf",
+    ],
+  },
 ];
 
 /** Extra words for the built-in decks in decks.ts, keyed by deck id. */

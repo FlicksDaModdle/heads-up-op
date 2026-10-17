@@ -1,0 +1,41 @@
+diamond-days|Diamond Days|⚾||Baseball! Players, plays, and ballpark snacks.
+Home run, Pitcher, Catcher, Shortstop, Strikeout, Grand slam, World Series, Bunt, Curveball, Dugout, Bullpen, Seventh-inning stretch, Babe Ruth, Shohei Ohtani, Jackie Robinson, Batting helmet, Baseball glove, Stolen base, Umpire, Foul ball, Double play, Hot dog, Cracker Jack, Little League, Knuckleball, Walk-off, Home plate, Yankees, Dodgers, Red Sox
+
+hoops|Hoops|🏀||Basketball! Players, moves and teams.
+Slam dunk, Three-pointer, Free throw, Lay-up, Rebound, Crossover, Alley-oop, Buzzer beater, Michael Jordan, LeBron James, Stephen Curry, Kobe Bryant, Shaquille O'Neal, Magic Johnson, Air ball, Fast break, Point guard, Center, Lakers, Celtics, Bulls, Warriors, NBA Finals, March Madness, Harlem Globetrotters, Jump ball, Traveling, Shot clock, Backboard, Dribble
+
+beautiful-game|The Beautiful Game|⚽||Soccer! Stars, clubs and big moments.
+Penalty kick, Goalkeeper, Red card, Yellow card, Offside, Header, Bicycle kick, Hat trick, World Cup, Free kick, Corner kick, Lionel Messi, Cristiano Ronaldo, Pelé, Diego Maradona, Kylian Mbappé, Neymar, David Beckham, Real Madrid, Barcelona, Manchester United, Liverpool, Bayern Munich, Champions League, Referee, Own goal, Stoppage time, Shin guards, Vuvuzela, Golden Boot
+
+in-the-ring|In the Ring|🥊||Boxing! Fighters and fight-night words.
+Knockout, Uppercut, Jab, Hook, Heavyweight, Referee, Ring bell, Corner man, Mouthguard, Boxing gloves, Punching bag, Speed bag, Muhammad Ali, Mike Tyson, Floyd Mayweather, Manny Pacquiao, Rocky Balboa, Title belt, Weigh-in, Sparring, Rope-a-dope, Bob and weave, TKO, Southpaw, Undercard, Round card, Black eye, Jump rope, Shadowboxing, Rematch
+
+gridiron|Gridiron|🏈||American football! Plays, positions and game day.
+Touchdown, Quarterback, Super Bowl, Field goal, Interception, Fumble, Tackle, Hail Mary, End zone, Kickoff, Linebacker, Wide receiver, Running back, Halftime show, Cheerleader, Tailgate, Helmet, Shoulder pads, Huddle, Blitz, Sack, Punt, First down, Tom Brady, Patrick Mahomes, Referee whistle, Overtime, Two-point conversion, Fantasy football, Foam finger
+
+binge-worthy|Binge-Worthy|🍿||Streaming shows. Describe the plot, the characters, or quote it.
+Stranger Things, Squid Game, The Crown, Bridgerton, Wednesday, Money Heist, The Witcher, Ozark, Black Mirror, Narcos, Orange Is the New Black, House of Cards, The Umbrella Academy, Cobra Kai, Emily in Paris, Lupin, Dark, Tiger King, Queer Eye, The Queen's Gambit, Never Have I Ever, Outer Banks, Sex Education, Ginny & Georgia, Arcane, One Piece, The Last of Us, The Mandalorian, The Boys, Severance
+
+prime-time|Prime Time|📺||Classic and modern TV series. Describe it without the title.
+Friends, The Office, Breaking Bad, Game of Thrones, Seinfeld, The Simpsons, Grey's Anatomy, Lost, How I Met Your Mother, The Big Bang Theory, Modern Family, Parks and Recreation, The Sopranos, Brooklyn Nine-Nine, Doctor Who, Sherlock, The Walking Dead, Glee, Gossip Girl, Mad Men, Downton Abbey, Fresh Prince of Bel-Air, Full House, Twin Peaks, The X-Files, Buffy the Vampire Slayer, Succession, Ted Lasso, Euphoria, Yellowstone
+
+k-pop|K-Pop|💜||Korean pop: groups, hits and fandom. Sing it or dance it!
+BTS, BLACKPINK, TWICE, EXO, Stray Kids, SEVENTEEN, NewJeans, Red Velvet, ITZY, aespa, BIGBANG, Girls' Generation, SHINee, TXT, ENHYPEN, IVE, LE SSERAFIM, NCT, ATEEZ, Gangnam Style, Lightstick, Fan chant, Comeback, Maknae, Idol, Fandom, Choreography, Music show, Photocard, Debut
+
+pit-lane|Pit Lane|🏎️||Formula racing! Drivers, teams and race-day words.
+Pit stop, Pole position, Checkered flag, Safety car, Grand Prix, Monaco, Silverstone, Lewis Hamilton, Max Verstappen, Michael Schumacher, Ayrton Senna, Ferrari, Mercedes, Red Bull Racing, McLaren, Tire change, Slipstream, Podium, Champagne spray, Formation lap, Fastest lap, DRS, Steering wheel, Helmet, Race engineer, Chicane, Hairpin turn, Pit wall, Overtake, Paddock
+
+going-for-gold|Going for Gold|🥇||The Olympic Games! Sports, legends and ceremonies.
+Gold medal, Torch relay, Opening ceremony, Olympic rings, Podium, Gymnastics, Synchronized swimming, Pole vault, Javelin, Discus, Hurdles, Relay race, Marathon, Fencing, Archery, Diving, Weightlifting, Usain Bolt, Michael Phelps, Simone Biles, Ski jump, Bobsled, Figure skating, Curling, Speed skating, Biathlon, Trampoline, Rhythmic gymnastics, Beach volleyball, Breakdancing
+
+dino-dig|Dino Dig|🦖||Dinosaurs and prehistoric life. Stomp, roar, and describe!
+Tyrannosaurus Rex, Triceratops, Stegosaurus, Velociraptor, Brachiosaurus, Pterodactyl, Ankylosaurus, Spinosaurus, Diplodocus, Parasaurolophus, Iguanodon, Allosaurus, Mosasaurus, Plesiosaurus, Woolly mammoth, Sabre-toothed tiger, Fossil, Paleontologist, Meteor, Extinction, Amber, Dinosaur egg, Jurassic, Cretaceous, Footprint, Volcano, Herbivore, Carnivore, Skeleton, Museum
+
+bible-stories|Bible Stories|📜||People and stories from the Bible. Tell their story without the name.
+Noah, Moses, Adam, Eve, Abraham, David, Goliath, Solomon, Samson, Delilah, Jonah, Daniel, Joseph, Mary, Jesus, Peter, Paul, Judas, John the Baptist, Elijah, Esther, Ruth, Cain, Abel, Isaac, Jacob, Lazarus, Pontius Pilate, Noah's Ark, Ten Commandments
+
+anime-shows|Anime Shows|🍥||Anime series. Describe the story or strike a famous pose.
+Naruto, One Piece, Dragon Ball Z, Attack on Titan, Demon Slayer, My Hero Academia, Death Note, Sailor Moon, Pokémon, Fullmetal Alchemist, Jujutsu Kaisen, Spy x Family, Hunter x Hunter, Bleach, One-Punch Man, Tokyo Ghoul, Cowboy Bebop, Neon Genesis Evangelion, Chainsaw Man, Haikyu!!, Sword Art Online, Fairy Tail, JoJo's Bizarre Adventure, Mob Psycho 100, Your Lie in April, Black Clover, Blue Lock, Frieren, Dandadan, Solo Leveling
+
+anime-heroes|Anime Heroes|⚔️||Anime characters. Do the voice, the pose, or the signature move!
+Goku, Naruto Uzumaki, Luffy, Pikachu, Sailor Moon, Light Yagami, Eren Yeager, Levi Ackerman, Tanjiro, Nezuko, Deku, All Might, Edward Elric, Vegeta, Sasuke, Kakashi, Zoro, Gojo Satoru, Itadori Yuji, Anya Forger, Saitama, Spike Spiegel, L, Totoro, Kirito, Ichigo, Gon, Killua, Mikasa, Frieren

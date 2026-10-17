@@ -27,9 +27,9 @@ test('ignores tilts until the phone has been upright', () => {
 test('screen down is correct, screen up is pass', () => {
   const d = detector();
   at(d, 0);
-  assert.equal(at(d, -35), 'correct');
+  assert.equal(at(d, -45), 'correct');
   at(d, 5);
-  assert.equal(at(d, 35), 'pass');
+  assert.equal(at(d, 45), 'pass');
 });
 
 test('a held tilt fires only once', () => {
@@ -42,7 +42,7 @@ test('a held tilt fires only once', () => {
 
 test('small wobbles do not fire', () => {
   const d = detector();
-  for (const deg of [0, 10, -20, 25, -29, 5]) assert.equal(at(d, deg), null);
+  for (const deg of [0, 10, -20, 25, -35, 38, 5]) assert.equal(at(d, deg), null);
 });
 
 test('reset requires returning upright', () => {
@@ -59,19 +59,19 @@ test('calibration makes tilts relative to how the phone is held', () => {
   at(d, 20); // player holds it tipped back a little
   d.calibrate();
   at(d, 20);
-  // 35 degrees down from their pose is correct even though the absolute
-  // pitch is only -15...
-  assert.equal(at(d, -15), 'correct');
+  // 45 degrees down from their pose is correct even though the absolute
+  // pitch is only -25...
+  assert.equal(at(d, -25), 'correct');
   at(d, 20);
-  // ...and 35 degrees up from it is pass.
-  assert.equal(at(d, 55), 'pass');
+  // ...and 45 degrees up from it is pass.
+  assert.equal(at(d, 65), 'pass');
 });
 
 test('shaking (stronger or weaker g) does not change the angle', () => {
   const d = detector();
   at(d, 0, 1.6);
   assert.equal(at(d, -20, 1.8), null);
-  assert.equal(at(d, -35, 0.6), 'correct');
+  assert.equal(at(d, -45, 0.6), 'correct');
 });
 
 test('a phone lying flat cannot be calibrated as neutral', () => {
@@ -79,7 +79,7 @@ test('a phone lying flat cannot be calibrated as neutral', () => {
   at(d, 90);
   d.calibrate();
   at(d, 25);
-  assert.equal(at(d, -10), 'correct'); // baseline was capped at +25
+  assert.equal(at(d, -20), 'correct'); // baseline was capped at +25
 });
 
 test('smoothing filters out a brief jolt', () => {

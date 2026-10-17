@@ -34,9 +34,9 @@ export class TiltDetector {
   private armed = false;
 
   constructor({
-    trigger = 30,
+    trigger = 40,
     rearm = 15,
-    smoothing = 0.5,
+    smoothing = 0.4,
     upright = 30,
     maxBaseline = 25,
   } = {}) {

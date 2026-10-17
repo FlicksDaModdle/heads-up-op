@@ -1,6 +1,7 @@
 import { Modal, Pressable, StyleSheet, Switch, Text, View } from 'react-native';
 
 import type { Settings } from '../game/types';
+import { play } from '../sound';
 import { colors, fonts, roundLengthOptions } from '../theme';
 import { PlayButton } from './ui';
 
@@ -35,7 +36,10 @@ export function SettingsPanel({
               return (
                 <Pressable
                   key={s}
-                  onPress={() => onChange({ ...settings, roundSeconds: s })}
+                  onPress={() => {
+                    play('tap');
+                    onChange({ ...settings, roundSeconds: s });
+                  }}
                   accessibilityRole="button"
                   accessibilityState={{ selected: on }}
                   style={[styles.chip, on && styles.chipOn]}
@@ -48,6 +52,21 @@ export function SettingsPanel({
         </View>
 
         <Text style={styles.section}>Settings</Text>
+        <View style={[styles.box, styles.switchRow, { marginBottom: 8 }]}>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.optionTitle}>Sound effects</Text>
+            <Text style={styles.optionSub}>Beeps, dings and buzzers</Text>
+          </View>
+          <Switch
+            value={settings.sound}
+            onValueChange={(sound) => {
+              onChange({ ...settings, sound });
+              if (sound) play('tap');
+            }}
+            trackColor={{ true: '#4ADE80', false: 'rgba(255,255,255,0.3)' }}
+            thumbColor={colors.white}
+          />
+        </View>
         <View style={[styles.box, styles.switchRow]}>
           <View style={{ flex: 1 }}>
             <Text style={styles.optionTitle}>Vibration</Text>

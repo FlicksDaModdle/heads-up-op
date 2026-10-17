@@ -15,6 +15,7 @@ import { DeckPoster, GreenButton, NewDeckPoster, SquareIconButton } from '../com
 import { builtInDecks } from '../game/decks';
 import { moreDecks } from '../game/moreDecks';
 import type { Deck, RoundSummary } from '../game/types';
+import { play } from '../sound';
 import { colors, fonts } from '../theme';
 
 export function HomeScreen({
@@ -82,7 +83,10 @@ export function HomeScreen({
           <View style={styles.headingRow}>
             <Text style={styles.heading}>My Decks</Text>
             <Pressable
-              onPress={() => setExpanded((e) => !e)}
+              onPress={() => {
+                play('tap');
+                setExpanded((e) => !e);
+              }}
               accessibilityRole="button"
               accessibilityLabel={expanded ? 'Show as row' : 'Show all decks'}
               style={styles.chevron}

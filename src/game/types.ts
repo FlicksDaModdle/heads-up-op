@@ -29,4 +29,5 @@ export type RoundSummary = {
 export type Settings = {
   roundSeconds: number;
   haptics: boolean;
+  sound: boolean;
 };

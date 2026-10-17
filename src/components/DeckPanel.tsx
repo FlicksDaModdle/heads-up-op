@@ -3,6 +3,7 @@ import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-nati
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import type { Deck } from '../game/types';
+import { play } from '../sound';
 import { fonts } from '../theme';
 import { PlayButton, SquareIconButton, WordTile } from './ui';
 
@@ -32,7 +33,14 @@ export function DeckPanel({
       onRequestClose={onClose}
       supportedOrientations={['portrait']}
     >
-      <Pressable style={styles.backdrop} onPress={onClose} accessibilityLabel="Close" />
+      <Pressable
+        style={styles.backdrop}
+        onPress={() => {
+          play('close');
+          onClose();
+        }}
+        accessibilityLabel="Close"
+      />
       {deck && (
         <View
           style={[styles.wrap, { paddingTop: insets.top + 16, paddingBottom: insets.bottom }]}

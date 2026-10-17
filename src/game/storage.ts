@@ -3,14 +3,17 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { customDeckColors } from '../theme';
 import type { Deck, RoundSummary, Settings } from './types';
 
+import { dealOrder, updateSeen } from './words';
+
 export { parseWords } from './words';
 
 const SETTINGS_KEY = 'settings';
 const HISTORY_KEY = 'history';
 const CUSTOM_KEY = 'customDecks';
+const SEEN_KEY = 'seenWords';
 const MAX_HISTORY = 10;
 
-export const defaultSettings: Settings = { roundSeconds: 60, haptics: true };
+export const defaultSettings: Settings = { roundSeconds: 60, haptics: true, sound: true };
 
 async function readJson<T>(key: string, fallback: T): Promise<T> {
   try {
@@ -36,6 +39,21 @@ export const loadHistory = () => readJson<RoundSummary[]>(HISTORY_KEY, []);
 export async function addRound(round: RoundSummary): Promise<void> {
   const history = await loadHistory();
   await writeJson(HISTORY_KEY, [round, ...history].slice(0, MAX_HISTORY));
+}
+
+type SeenMap = Record<string, string[]>;
+
+/** The deck's words in play order, unseen ones first. */
+export async function dealWords(deck: Deck): Promise<string[]> {
+  const seen = await readJson<SeenMap>(SEEN_KEY, {});
+  return dealOrder(deck.words, new Set(seen[deck.id] ?? []));
+}
+
+/** Records the words a round showed, so the next rounds avoid them. */
+export async function markSeen(deck: Deck, shown: string[]): Promise<void> {
+  const seen = await readJson<SeenMap>(SEEN_KEY, {});
+  seen[deck.id] = updateSeen(deck.words, seen[deck.id] ?? [], shown);
+  await writeJson(SEEN_KEY, seen);
 }
 
 /** A deck the player wrote, as stored on the device. */

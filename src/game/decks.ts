@@ -1,7 +1,8 @@
 // Built-in decks. Names, blurbs and word lists are original to this project.
+import { coreExtras } from './moreDecks.ts';
 import type { Deck } from './types';
 
-export const builtInDecks: Deck[] = [
+const baseDecks: Deck[] = [
   {
     id: "wild-things",
     name: "Wild Things",
@@ -331,3 +332,15 @@ export const builtInDecks: Deck[] = [
     ],
   },
 ];
+
+/** Built-in decks plus the extra words from decks/extra/*.txt (deduplicated). */
+export const builtInDecks: Deck[] = baseDecks.map((deck) => {
+  const seen = new Set(deck.words.map((w) => w.toLowerCase()));
+  const extra = (coreExtras[deck.id] ?? []).filter((w) => {
+    const key = w.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  return { ...deck, words: [...deck.words, ...extra] };
+});

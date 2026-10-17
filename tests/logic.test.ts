@@ -6,7 +6,7 @@ import { test } from 'node:test';
 import { builtInDecks } from '../src/game/decks.ts';
 import { moreDecks } from '../src/game/moreDecks.ts';
 import { TiltDetector } from '../src/game/tilt.ts';
-import { parseWords } from '../src/game/words.ts';
+import { dealOrder, parseWords, shuffle, updateSeen } from '../src/game/words.ts';
 
 // No smoothing, so each sample maps directly to the filtered value.
 const detector = () => new TiltDetector({ smoothing: 1 });
@@ -102,5 +102,46 @@ test('all decks are well formed', () => {
     assert.ok(deck.words.length >= 20, `${deck.name} has too few words`);
     assert.equal(new Set(deck.words).size, deck.words.length, `${deck.name} has duplicates`);
     assert.ok(deck.blurb.length > 0 && deck.emoji.length > 0, `${deck.name} is incomplete`);
+  }
+});
+
+test('shuffle keeps every item exactly once', () => {
+  const items = Array.from({ length: 50 }, (_, i) => i);
+  assert.deepEqual([...shuffle(items)].sort((a, b) => a - b), items);
+});
+
+test('dealOrder puts unseen words first', () => {
+  const words = ['a', 'b', 'c', 'd', 'e', 'f'];
+  const order = dealOrder(words, new Set(['a', 'b', 'c']));
+  assert.deepEqual(order.slice(0, 3).sort(), ['d', 'e', 'f']);
+  assert.deepEqual(order.slice(3).sort(), ['a', 'b', 'c']);
+});
+
+test('updateSeen accumulates, then starts over once the deck is used up', () => {
+  const words = ['a', 'b', 'c', 'd'];
+  let seen = updateSeen(words, [], ['a', 'b']);
+  assert.deepEqual(seen.sort(), ['a', 'b']);
+  seen = updateSeen(words, seen, ['c']);
+  assert.deepEqual(seen.sort(), ['a', 'b', 'c']);
+  // Seeing the last word completes the deck: only this round's words remain.
+  seen = updateSeen(words, seen, ['d', 'a']);
+  assert.deepEqual(seen.sort(), ['a', 'd']);
+});
+
+test('updateSeen forgets words removed from the deck', () => {
+  assert.deepEqual(updateSeen(['a', 'b', 'c'], ['x', 'a'], ['b']).sort(), ['a', 'b']);
+});
+
+test('a few rounds through a big deck never repeat a word', () => {
+  const deck = [...builtInDecks, ...moreDecks].find((d) => d.id === 'wild-things')!;
+  let seen: string[] = [];
+  const shownSoFar = new Set<string>();
+  for (let round = 0; round < 4; round++) {
+    const shown = dealOrder(deck.words, new Set(seen)).slice(0, 15);
+    for (const w of shown) {
+      assert.ok(!shownSoFar.has(w), `repeated ${w} in round ${round + 1}`);
+      shownSoFar.add(w);
+    }
+    seen = updateSeen(deck.words, seen, shown);
   }
 });

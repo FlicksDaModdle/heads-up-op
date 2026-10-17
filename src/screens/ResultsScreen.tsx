@@ -1,9 +1,11 @@
 import { Ionicons } from '@expo/vector-icons';
+import { useEffect } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { PlayButton, SquareIconButton } from '../components/ui';
 import type { CardResult, Deck } from '../game/types';
+import { play } from '../sound';
 import { colors, fonts } from '../theme';
 
 export function ResultsScreen({
@@ -19,6 +21,8 @@ export function ResultsScreen({
 }) {
   const insets = useSafeAreaInsets();
   const score = results.filter((r) => r.correct).length;
+
+  useEffect(() => play('fanfare'), []);
 
   return (
     <View style={[styles.screen, { paddingTop: insets.top + 12 }]}>

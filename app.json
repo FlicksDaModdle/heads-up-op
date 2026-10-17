@@ -42,7 +42,9 @@
           "resizeMode": "contain",
           "backgroundColor": "#1E8EF5"
         }
-      ]
+      ],
+      "expo-audio",
+      "expo-asset"
     ]
   }
 }

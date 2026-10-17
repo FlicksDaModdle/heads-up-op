@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import type { ReactNode } from 'react';
+import { memo, type ReactNode } from 'react';
 import {
   Pressable,
   StyleSheet,
@@ -15,7 +15,9 @@ import { play } from '../sound';
 import { colors, fonts } from '../theme';
 
 /** Tall deck card, drawn entirely in code. */
-export function DeckPoster({
+export const DeckPoster = memo(DeckPosterView, (a, b) => a.deck === b.deck && a.width === b.width);
+
+function DeckPosterView({
   deck,
   width,
   onPress,
@@ -195,15 +197,22 @@ export function StripedCard({
 }) {
   return (
     <View style={[styles.gameCard, { backgroundColor: color }]}>
-      <View style={styles.stripes} pointerEvents="none">
-        {Array.from({ length: 60 }, (_, i) => (
-          <View key={i} style={[styles.stripe, { left: i * 28 - 400 }]} />
-        ))}
-      </View>
+      <Stripes />
       {children}
     </View>
   );
 }
+
+/** The diagonal stripe overlay; built once, never re-rendered. */
+const Stripes = memo(function Stripes() {
+  return (
+    <View style={styles.stripes} pointerEvents="none">
+      {Array.from({ length: 60 }, (_, i) => (
+        <View key={i} style={[styles.stripe, { left: i * 28 - 400 }]} />
+      ))}
+    </View>
+  );
+});
 
 const styles = StyleSheet.create({
   posterShadow: {

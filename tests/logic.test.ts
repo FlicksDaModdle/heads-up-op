@@ -145,3 +145,28 @@ test('a few rounds through a big deck never repeat a word', () => {
     seen = updateSeen(deck.words, seen, shown);
   }
 });
+
+import { CHAR_WIDTH, fitText, LINE_HEIGHT } from '../src/game/fitText.ts';
+
+test('fitText keeps short words on one line at the max size', () => {
+  const fit = fitText('Owl', 600, 250, 110);
+  assert.deepEqual(fit.lines, ['Owl']);
+  assert.equal(fit.fontSize, 110);
+});
+
+test('fitText splits long phrases at spaces and still fits the box', () => {
+  const w = 600;
+  const h = 250;
+  const fit = fitText('Teenage Mutant Ninja Turtles', w, h, 110);
+  assert.ok(fit.lines.length >= 2);
+  assert.equal(fit.lines.join(' '), 'Teenage Mutant Ninja Turtles');
+  const longest = Math.max(...fit.lines.map((l) => l.length));
+  assert.ok(longest * CHAR_WIDTH * fit.fontSize <= w + 1);
+  assert.ok(fit.lines.length * LINE_HEIGHT * fit.fontSize <= h + 1);
+});
+
+test('fitText never breaks inside a word', () => {
+  const fit = fitText('Supercalifragilisticexpialidocious', 300, 200, 110);
+  assert.deepEqual(fit.lines, ['Supercalifragilisticexpialidocious']);
+  assert.ok(fit.fontSize >= 12);
+});

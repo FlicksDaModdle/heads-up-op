@@ -85,7 +85,12 @@ def noise(dur, vol=0.3, lowpass=0.15):
     return out
 
 
+MIN_LENGTH = 0.15  # seconds; Android tends to drop clips shorter than this
+
+
 def save(name, samples):
+    # Pad very short sounds with silence so every platform plays them.
+    samples = samples + [0.0] * max(0, int(RATE * MIN_LENGTH) - len(samples))
     peak = max(1e-9, max(abs(s) for s in samples))
     scale = 0.9 / peak if peak > 0.9 else 1.0
     path = os.path.join(OUT, f"{name}.wav")

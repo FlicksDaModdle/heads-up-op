@@ -6,13 +6,14 @@ import {
   Nunito_900Black,
 } from '@expo-google-fonts/nunito';
 import { useFonts } from 'expo-font';
-import * as ScreenOrientation from 'expo-screen-orientation';
+import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import { useCallback, useEffect, useState } from 'react';
-import { ActivityIndicator, BackHandler, View } from 'react-native';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Animated, BackHandler, Platform, StyleSheet } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { SettingsPanel } from './src/components/SettingsPanel';
+import { rotateTo } from './src/orientation';
 import { initSounds, setSoundEnabled } from './src/sound';
 import {
   addRound,
@@ -32,6 +33,11 @@ import { GameScreen } from './src/screens/GameScreen';
 import { HomeScreen } from './src/screens/HomeScreen';
 import { ResultsScreen } from './src/screens/ResultsScreen';
 import { colors } from './src/theme';
+
+// Keep the native splash up until fonts are ready (no spinner flash).
+SplashScreen.preventAutoHideAsync().catch(() => {});
+
+const useNative = Platform.OS !== 'web';
 
 type Route =
   | { name: 'home' }
@@ -64,26 +70,67 @@ export default function App() {
   useEffect(() => {
     initSounds();
     reload();
-    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP).catch(() => {});
+    rotateTo(false);
   }, [reload]);
+
+  useEffect(() => {
+    if (fontsLoaded) SplashScreen.hideAsync().catch(() => {});
+  }, [fontsLoaded]);
+
+  // Rounds are landscape, everything else portrait. A blue cover fades in,
+  // the phone rotates behind it, the next screen mounts at its final size,
+  // then the cover fades away, so no half-rotated layout is ever seen.
+  const cover = useRef(new Animated.Value(0)).current;
+  const [covering, setCovering] = useState(false);
+  const busy = useRef(false);
+  const fade = (to: number, duration: number) =>
+    new Promise<void>((resolve) =>
+      Animated.timing(cover, { toValue: to, duration, useNativeDriver: useNative }).start(() =>
+        resolve(),
+      ),
+    );
+
+  const go = useCallback(
+    async (next: Route) => {
+      const landscape = next.name === 'game';
+      const rotating = landscape !== (route.name === 'game');
+      if (!rotating) {
+        setRoute(next);
+        return;
+      }
+      if (busy.current) return;
+      busy.current = true;
+      setCovering(true);
+      await fade(1, 140);
+      await rotateTo(landscape);
+      setRoute(next);
+      // Let the new screen lay out before revealing it.
+      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+      await fade(0, 220);
+      setCovering(false);
+      busy.current = false;
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [route.name],
+  );
 
   // Android back: anywhere but home goes home.
   useEffect(() => {
     const sub = BackHandler.addEventListener('hardwareBackPress', () => {
       if (route.name === 'home') return false;
-      setRoute({ name: 'home' });
+      go({ name: 'home' });
       return true;
     });
     return () => sub.remove();
-  }, [route.name]);
+  }, [route.name, go]);
 
   const play = async (deck: Deck) => {
     const words = await dealWords(deck);
-    setRoute({ name: 'game', deck, words, round: Date.now() });
+    go({ name: 'game', deck, words, round: Date.now() });
   };
 
   const finishRound = async (deck: Deck, results: CardResult[]) => {
-    setRoute({ name: 'results', deck, results });
+    go({ name: 'results', deck, results });
     await markSeen(
       deck,
       results.map((r) => r.word),
@@ -102,20 +149,16 @@ export default function App() {
     saveSettings(s);
   };
 
-  if (!fontsLoaded) {
-    return (
-      <View style={{ flex: 1, backgroundColor: colors.sky, justifyContent: 'center' }}>
-        <ActivityIndicator color="#fff" size="large" />
-      </View>
-    );
-  }
+  const customDecks = useMemo(() => custom.map(customToDeck), [custom]);
+
+  if (!fontsLoaded) return null;
 
   return (
     <SafeAreaProvider>
       <StatusBar style="light" hidden={route.name === 'game'} />
       {route.name === 'home' && (
         <HomeScreen
-          customDecks={custom.map(customToDeck)}
+          customDecks={customDecks}
           history={history}
           onPlay={play}
           onNewDeck={() => setRoute({ name: 'editor' })}
@@ -130,7 +173,7 @@ export default function App() {
           words={route.words}
           roundSeconds={settings.roundSeconds}
           haptics={settings.haptics}
-          onQuit={() => setRoute({ name: 'home' })}
+          onQuit={() => go({ name: 'home' })}
           onFinish={(results) => finishRound(route.deck, results)}
         />
       )}
@@ -151,6 +194,10 @@ export default function App() {
           }}
         />
       )}
+      <Animated.View
+        pointerEvents={covering ? 'auto' : 'none'}
+        style={[StyleSheet.absoluteFill, { backgroundColor: colors.card, opacity: cover }]}
+      />
       <SettingsPanel
         visible={settingsOpen}
         settings={settings}

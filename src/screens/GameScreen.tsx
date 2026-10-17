@@ -1,7 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as Haptics from 'expo-haptics';
 import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
-import * as ScreenOrientation from 'expo-screen-orientation';
 import { Accelerometer } from 'expo-sensors';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -16,6 +15,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { StripedCard } from '../components/ui';
+import { fitText, LINE_HEIGHT } from '../game/fitText';
 import { TiltDetector } from '../game/tilt';
 import type { CardResult, Deck } from '../game/types';
 import { play } from '../sound';
@@ -163,14 +163,9 @@ export function GameScreen({
     };
   }, []);
 
-  // Landscape while playing; back to portrait on the way out.
-  useEffect(() => {
-    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE).catch(() => {});
-    return () => {
-      stopTimers();
-      ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP).catch(() => {});
-    };
-  }, []);
+  // The app shell rotates to landscape before this screen mounts and back
+  // to portrait after it; here we only stop the clock if the round is left.
+  useEffect(() => stopTimers, []);
 
   // Tilt input. iOS reports every axis with the opposite sign to Android.
   useEffect(() => {
@@ -189,7 +184,13 @@ export function GameScreen({
 
   // Tap fallback: right half = correct, left half = pass. pageX, because
   // locationX is relative to whichever child (e.g. the word) was touched.
-  const { width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
+  // Equal padding on opposite sides, so the middle of the text box is the
+  // middle of the screen.
+  const padV = Math.max(insets.top, insets.bottom) + 56;
+  const padH = Math.max(insets.left, insets.right) + 50;
+  const boxW = Math.max(100, width - padH * 2);
+  const boxH = Math.max(60, height - padV * 2);
   const onTap = (e: GestureResponderEvent) => {
     if (phaseRef.current === 'ready') startCountdown();
     else if (phaseRef.current === 'playing') answer(e.nativeEvent.pageX > width / 2);
@@ -204,11 +205,19 @@ export function GameScreen({
         ? colors.timesUp
         : colors.card;
 
-  const big = (text: string, size: number) => (
-    <Text style={[styles.big, { fontSize: size }]} numberOfLines={2} adjustsFontSizeToFit>
-      {text}
-    </Text>
-  );
+  const big = (text: string, maxSize: number) => {
+    const fit = fitText(text, boxW, boxH, maxSize);
+    return (
+      <Text
+        style={[styles.big, { fontSize: fit.fontSize, lineHeight: fit.fontSize * LINE_HEIGHT }]}
+        numberOfLines={fit.lines.length}
+        adjustsFontSizeToFit
+        minimumFontScale={0.6}
+      >
+        {fit.lines.join('\n')}
+      </Text>
+    );
+  };
 
   const showTimer = phase === 'playing' || phase === 'feedback';
   const warning = secondsLeft <= WARN_FROM;
@@ -226,25 +235,18 @@ export function GameScreen({
           <View
             style={[
               styles.center,
-              {
-                paddingTop: insets.top + 56,
-                paddingBottom: insets.bottom + 56,
-                paddingLeft: insets.left + 50,
-                paddingRight: insets.right + 50,
-              },
+              { paddingVertical: padV, paddingHorizontal: padH },
             ]}
           >
-            {phase === 'ready' && big('Place on\nForehead', 96)}
-            {phase === 'countdown' && (
-              <>
-                <Text style={styles.getReady}>Get Ready!</Text>
-                {big(String(countdown), 150)}
-              </>
-            )}
+            {phase === 'ready' && big('Place on Forehead', 110)}
+            {phase === 'countdown' && big(String(countdown), 170)}
             {phase === 'playing' && big(words[index], 110)}
             {phase === 'feedback' && big(lastCorrect ? 'Correct!' : 'Pass', 120)}
             {phase === 'timesUp' && big("Time's Up!", 120)}
           </View>
+          {phase === 'countdown' && (
+            <Text style={[styles.getReady, { top: insets.top + 16 }]}>Get Ready!</Text>
+          )}
           {phase === 'ready' && (
             <Text style={[styles.hint, { bottom: insets.bottom + 18 }]}>
               Tilt down = correct · Tilt up = pass · or tap to start
@@ -279,13 +281,22 @@ const styles = StyleSheet.create({
   },
   big: {
     fontFamily: fonts.black,
+    // Android pads text for accents by default, which nudges it off center.
+    includeFontPadding: false,
+    textAlignVertical: 'center',
     color: colors.white,
     textAlign: 'center',
     textShadowColor: 'rgba(0,0,0,0.2)',
     textShadowOffset: { width: 0, height: 3 },
     textShadowRadius: 0,
   },
-  getReady: { fontFamily: fonts.heavy, fontSize: 30, color: 'rgba(255,255,255,0.85)' },
+  getReady: {
+    position: 'absolute',
+    alignSelf: 'center',
+    fontFamily: fonts.heavy,
+    fontSize: 28,
+    color: 'rgba(255,255,255,0.85)',
+  },
   hint: {
     position: 'absolute',
     bottom: 18,

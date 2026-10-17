@@ -38,9 +38,12 @@ export function HomeScreen({
   const [open, setOpen] = useState<Deck | null>(null);
   const [expanded, setExpanded] = useState(false);
 
-  const pageWidth = Math.min(width, 520);
-  const posterWidth = Math.floor((pageWidth - 40 - 32) / 3.2);
-  const gridPoster = Math.floor((pageWidth - 40 - 32) / 3);
+  // Landscape: fit as many poster columns as the width allows.
+  const GAP = 16;
+  const contentWidth = width - insets.left - insets.right - 40;
+  const columns = Math.max(3, Math.floor((contentWidth + GAP) / (128 + GAP)));
+  const gridPoster = Math.floor((contentWidth - GAP * (columns - 1)) / columns);
+  const posterWidth = Math.min(gridPoster, 130);
 
   const row = (decks: Deck[], lead?: ReactNode) => (
     <ScrollView
@@ -58,16 +61,20 @@ export function HomeScreen({
   return (
     <View style={styles.screen}>
       <ScrollView
-        contentContainerStyle={{ paddingBottom: insets.bottom + 100 }}
+        contentContainerStyle={{
+          paddingBottom: insets.bottom + 100,
+          paddingLeft: insets.left,
+          paddingRight: insets.right,
+        }}
         style={styles.scroll}
       >
         {/* Hero */}
-        <View style={[styles.section, { paddingTop: insets.top + 18 }]}>
+        <View style={[styles.section, { paddingTop: insets.top + 14 }]}>
           <View style={styles.sticker}>
             <Text style={styles.stickerText}>100%{'\n'}FREE</Text>
           </View>
           <Text style={styles.script}>Let's play</Text>
-          <Text style={styles.hero}>Forehead{'\n'}Frenzy!</Text>
+          <Text style={styles.hero}>Forehead Frenzy!</Text>
           <Text style={styles.tagline}>Make a deck about anything you like!</Text>
           {row(customDecks, <NewDeckPoster width={posterWidth} onPress={onNewDeck} />)}
           <View style={styles.ctaRow}>
@@ -149,7 +156,7 @@ export function HomeScreen({
         </View>
       </ScrollView>
 
-      <View style={[styles.fab, { bottom: insets.bottom + 18 }]}>
+      <View style={[styles.fab, { bottom: insets.bottom + 18, right: insets.right + 18 }]}>
         <SquareIconButton icon="settings-sharp" label="Settings" onPress={onSettings} size={58} />
       </View>
 
@@ -176,7 +183,7 @@ const styles = StyleSheet.create({
   sticker: {
     position: 'absolute',
     right: 14,
-    top: 46,
+    top: 18,
     width: 84,
     height: 84,
     borderRadius: 42,
@@ -199,8 +206,8 @@ const styles = StyleSheet.create({
   hero: {
     fontFamily: fonts.display,
     color: colors.white,
-    fontSize: 58,
-    lineHeight: 60,
+    fontSize: 46,
+    lineHeight: 50,
     marginTop: -2,
     textShadowColor: 'rgba(0,0,0,0.18)',
     textShadowOffset: { width: 0, height: 3 },

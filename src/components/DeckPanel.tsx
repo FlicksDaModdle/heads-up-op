@@ -31,7 +31,7 @@ export function DeckPanel({
       transparent
       animationType="fade"
       onRequestClose={onClose}
-      supportedOrientations={['portrait']}
+      supportedOrientations={['landscape-left', 'landscape-right']}
     >
       <Pressable
         style={styles.backdrop}
@@ -43,7 +43,15 @@ export function DeckPanel({
       />
       {deck && (
         <View
-          style={[styles.wrap, { paddingTop: insets.top + 16, paddingBottom: insets.bottom }]}
+          style={[
+            styles.wrap,
+            {
+              paddingTop: insets.top + 14,
+              paddingBottom: insets.bottom + 14,
+              paddingLeft: insets.left + 18,
+              paddingRight: insets.right + 8,
+            },
+          ]}
           pointerEvents="box-none"
         >
           <View style={[styles.panel, { backgroundColor: deck.panel }]}>
@@ -86,9 +94,9 @@ export function DeckPanel({
                   styles.fanTile,
                   {
                     transform: [
-                      { translateX: (i - 1) * 100 },
-                      { translateY: i === 1 ? 34 : 0 },
-                      { rotate: `${(i - 1) * 14}deg` },
+                      { translateY: (i - 1) * 84 },
+                      { translateX: i === 1 ? -16 : 0 },
+                      { rotate: `${(i - 1) * -9}deg` },
                     ],
                     zIndex: i === 1 ? 0 : 1,
                   },
@@ -106,7 +114,8 @@ export function DeckPanel({
 
 const styles = StyleSheet.create({
   backdrop: { ...StyleSheet.absoluteFill, backgroundColor: 'rgba(0,20,60,0.55)' },
-  wrap: { flex: 1, paddingHorizontal: 18 },
+  // Landscape: rules card on the left, sample words fanned on the right.
+  wrap: { flex: 1, flexDirection: 'row', alignItems: 'stretch' },
   panel: {
     flex: 1,
     borderRadius: 22,
@@ -121,21 +130,21 @@ const styles = StyleSheet.create({
     flex: 1,
     borderRadius: 16,
     borderWidth: 2,
-    padding: 20,
+    padding: 16,
   },
   title: {
     fontFamily: fonts.display,
-    fontSize: 54,
+    fontSize: 44,
     textAlign: 'center',
     textShadowColor: 'rgba(0,0,0,0.25)',
     textShadowOffset: { width: 0, height: 3 },
     textShadowRadius: 0,
-    marginBottom: 12,
+    marginBottom: 8,
   },
   blurbScroll: { flex: 1 },
-  blurb: { fontFamily: fonts.bold, fontSize: 21, lineHeight: 29 },
+  blurb: { fontFamily: fonts.bold, fontSize: 18, lineHeight: 25 },
   challenge: { marginTop: 18 },
   actions: { flexDirection: 'row', alignItems: 'center', marginTop: 12 },
-  fan: { height: 150, alignItems: 'center', justifyContent: 'flex-start', marginTop: -26 },
+  fan: { width: 170, alignItems: 'center', justifyContent: 'center' },
   fanTile: { position: 'absolute' },
 });

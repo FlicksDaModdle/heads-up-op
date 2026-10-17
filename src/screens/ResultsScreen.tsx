@@ -25,16 +25,35 @@ export function ResultsScreen({
   useEffect(() => play('fanfare'), []);
 
   return (
-    <View style={[styles.screen, { paddingTop: insets.top + 12 }]}>
-      <View style={styles.header}>
-        <Text style={styles.deck}>{deck.name}</Text>
-        <Text style={styles.youGot}>You got</Text>
-        <Text style={styles.score} testID="score">
-          {score}
-        </Text>
-        <Text style={styles.youGot}>{score === 1 ? 'word right!' : 'words right!'}</Text>
+    // Landscape: score and buttons on the left, the word list on the right.
+    <View
+      style={[
+        styles.screen,
+        {
+          paddingTop: insets.top + 12,
+          paddingBottom: insets.bottom + 12,
+          paddingLeft: insets.left + 16,
+          paddingRight: insets.right + 16,
+        },
+      ]}
+    >
+      <View style={styles.side}>
+        <View style={styles.header}>
+          <Text style={styles.deck} numberOfLines={1} adjustsFontSizeToFit>
+            {deck.name}
+          </Text>
+          <Text style={styles.youGot}>You got</Text>
+          <Text style={styles.score} testID="score">
+            {score}
+          </Text>
+          <Text style={styles.youGot}>{score === 1 ? 'word right!' : 'words right!'}</Text>
+        </View>
+        <View style={styles.actions}>
+          <SquareIconButton icon="home" label="Home" onPress={onHome} size={54} />
+          <PlayButton label="Play Again!" onPress={onPlayAgain} style={{ flex: 1 }} />
+        </View>
       </View>
-      <ScrollView style={styles.list} contentContainerStyle={{ paddingVertical: 10 }}>
+      <ScrollView style={styles.list} contentContainerStyle={{ paddingBottom: 10 }}>
         {results.length === 0 && <Text style={styles.empty}>No cards played</Text>}
         {results.map((r, i) => (
           <View key={i} style={styles.item}>
@@ -47,37 +66,35 @@ export function ResultsScreen({
           </View>
         ))}
       </ScrollView>
-      <View style={[styles.actions, { paddingBottom: insets.bottom + 16 }]}>
-        <SquareIconButton icon="home" label="Home" onPress={onHome} size={54} />
-        <PlayButton label="Play Again!" onPress={onPlayAgain} style={{ flex: 1 }} />
-      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: colors.page },
+  screen: { flex: 1, flexDirection: 'row', gap: 16, backgroundColor: colors.page },
+  side: { width: '40%', justifyContent: 'space-between' },
   header: {
-    marginHorizontal: 16,
+    flex: 1,
+    justifyContent: 'center',
     borderRadius: 22,
     borderWidth: 6,
     borderColor: colors.white,
     backgroundColor: colors.card,
     alignItems: 'center',
-    paddingVertical: 16,
+    paddingVertical: 10,
   },
   deck: { fontFamily: fonts.display, fontSize: 26, color: colors.yellow },
   youGot: { fontFamily: fonts.heavy, fontSize: 22, color: colors.white },
   score: {
     fontFamily: fonts.black,
-    fontSize: 104,
-    lineHeight: 112,
+    fontSize: 84,
+    lineHeight: 92,
     color: colors.white,
     textShadowColor: 'rgba(0,0,0,0.2)',
     textShadowOffset: { width: 0, height: 4 },
     textShadowRadius: 0,
   },
-  list: { flex: 1, marginHorizontal: 16, marginTop: 12 },
+  list: { flex: 1 },
   empty: { fontFamily: fonts.bold, color: colors.white, textAlign: 'center', marginTop: 20 },
   item: {
     flexDirection: 'row',
@@ -91,11 +108,5 @@ const styles = StyleSheet.create({
   },
   word: { fontFamily: fonts.black, fontSize: 21, color: colors.white, flex: 1 },
   missed: { color: 'rgba(255,255,255,0.45)', fontFamily: fonts.bold },
-  actions: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    paddingHorizontal: 16,
-    paddingTop: 12,
-  },
+  actions: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingTop: 12 },
 });

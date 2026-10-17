@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:heads_up/game/tilt_detector.dart';
+import 'package:forehead_frenzy/game/tilt_detector.dart';
 
 void main() {
   // No smoothing so each sample maps directly to the filtered value.

@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    branches: [main]
+    branches: ["**"]
   pull_request:
   workflow_dispatch:
 
@@ -43,7 +43,7 @@ jobs:
         run: |
           mkdir -p dist/Payload
           cp -R build/ios/iphoneos/Runner.app dist/Payload/
-          cd dist && zip -qry HeadsUp-unsigned.ipa Payload
+          cd dist && zip -qry ForeheadFrenzy-unsigned.ipa Payload
 
       # Runs only when the signing secrets are set (see README).
       - name: Sign .ipa with your certificate
@@ -93,12 +93,12 @@ jobs:
           codesign --force --sign "$IDENTITY" --entitlements "$WORK/entitlements.plist" "$APP"
           codesign --verify --deep --strict "$APP"
 
-          cd signed && zip -qry ../dist/HeadsUp.ipa Payload
+          cd signed && zip -qry ../dist/ForeheadFrenzy.ipa Payload
           security delete-keychain "$KEYCHAIN"
 
       - uses: actions/upload-artifact@v4
         with:
-          name: HeadsUp-iOS
+          name: ForeheadFrenzy-iOS
           path: dist/*.ipa
 
   android:
@@ -119,5 +119,5 @@ jobs:
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
         with:
-          name: HeadsUp-Android
+          name: ForeheadFrenzy-Android
           path: build/app/outputs/flutter-apk/app-release.apk

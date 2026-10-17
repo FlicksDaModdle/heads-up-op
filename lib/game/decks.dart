@@ -6,20 +6,32 @@ class Deck {
     required this.name,
     required this.icon,
     required this.color,
+    required this.blurb,
     required this.words,
+    this.customId,
   });
 
   final String name;
   final IconData icon;
   final Color color;
+
+  /// How to give clues for this deck, shown before the round.
+  final String blurb;
   final List<String> words;
+
+  /// Set for decks the player made; null for built-in decks.
+  final String? customId;
+
+  bool get isCustom => customId != null;
 }
 
 const builtInDecks = <Deck>[
   Deck(
-    name: 'Animals',
+    name: 'Wild Things',
     icon: Icons.pets,
     color: Color(0xFF43A047),
+    blurb:
+        'Describe the creature without saying its name. Feeling brave? Use only noises and moves.',
     words: [
       'Elephant',
       'Giraffe',
@@ -54,9 +66,11 @@ const builtInDecks = <Deck>[
     ],
   ),
   Deck(
-    name: 'Movies',
+    name: 'Big Screen',
     icon: Icons.movie,
     color: Color(0xFFE53935),
+    blurb:
+        'Describe the plot, quote a famous line, or hum the theme. Never say a word from the title.',
     words: [
       'Titanic',
       'Jaws',
@@ -91,9 +105,11 @@ const builtInDecks = <Deck>[
     ],
   ),
   Deck(
-    name: 'Act It Out',
+    name: 'Mime Time',
     icon: Icons.theater_comedy,
     color: Color(0xFFFB8C00),
+    blurb:
+        'No talking at all. Act it out and let your guesser do the shouting.',
     words: [
       'Brushing teeth',
       'Riding a horse',
@@ -128,9 +144,11 @@ const builtInDecks = <Deck>[
     ],
   ),
   Deck(
-    name: 'Food',
+    name: 'Snack Attack',
     icon: Icons.fastfood,
     color: Color(0xFFFDD835),
+    blurb:
+        "Describe how it tastes, where you'd eat it, or what goes in it. No saying the name.",
     words: [
       'Pizza',
       'Sushi',
@@ -165,9 +183,11 @@ const builtInDecks = <Deck>[
     ],
   ),
   Deck(
-    name: 'Characters',
+    name: 'Famous Faces',
     icon: Icons.auto_awesome,
     color: Color(0xFF8E24AA),
+    blurb:
+        'Do the voice, strike the pose, or name their friends and enemies.',
     words: [
       'Mickey Mouse',
       'SpongeBob',
@@ -202,9 +222,11 @@ const builtInDecks = <Deck>[
     ],
   ),
   Deck(
-    name: 'Sports',
+    name: 'Game On',
     icon: Icons.sports_soccer,
     color: Color(0xFF1E88E5),
+    blurb:
+        'Describe the equipment, the moves, or the scoring. Sound effects encouraged.',
     words: [
       'Basketball',
       'Soccer',
@@ -239,9 +261,11 @@ const builtInDecks = <Deck>[
     ],
   ),
   Deck(
-    name: 'Jobs',
+    name: 'Nine to Five',
     icon: Icons.work,
     color: Color(0xFF00897B),
+    blurb:
+        'Describe a day at work: tools, uniform, the things they say to customers.',
     words: [
       'Firefighter',
       'Astronaut',
@@ -276,9 +300,11 @@ const builtInDecks = <Deck>[
     ],
   ),
   Deck(
-    name: 'Places',
+    name: 'Globetrotter',
     icon: Icons.public,
     color: Color(0xFF6D4C41),
+    blurb:
+        "Say what you'd see, hear, or pack for the trip. No spelling it out.",
     words: [
       'Paris',
       'The beach',

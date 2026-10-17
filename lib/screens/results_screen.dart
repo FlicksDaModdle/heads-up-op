@@ -9,10 +9,12 @@ class ResultsScreen extends StatelessWidget {
     required this.deck,
     required this.roundSeconds,
     required this.results,
+    this.haptics = true,
   });
 
   final Deck deck;
   final int roundSeconds;
+  final bool haptics;
   final List<CardResult> results;
 
   @override
@@ -20,48 +22,35 @@ class ResultsScreen extends StatelessWidget {
     final score = results.where((r) => r.correct).length;
     return Scaffold(
       body: SafeArea(
-        child: Row(
+        child: Column(
           children: [
-            Expanded(
+            Container(
+              width: double.infinity,
+              margin: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              decoration: BoxDecoration(
+                color: deck.color,
+                borderRadius: BorderRadius.circular(24),
+              ),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     deck.name,
-                    style: const TextStyle(fontSize: 22, color: Colors.white70),
+                    style: const TextStyle(fontSize: 20, color: Colors.white70),
                   ),
                   Text(
                     '$score',
                     key: const Key('score'),
                     style: const TextStyle(
-                      fontSize: 120,
+                      fontSize: 96,
                       fontWeight: FontWeight.w900,
                       height: 1,
+                      color: Colors.white,
                     ),
                   ),
-                  Text('correct', style: const TextStyle(fontSize: 22)),
-                  const SizedBox(height: 24),
-                  Wrap(
-                    spacing: 12,
-                    children: [
-                      FilledButton.icon(
-                        icon: const Icon(Icons.replay),
-                        label: const Text('Play again'),
-                        onPressed: () => Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(
-                            builder: (_) => GameScreen(
-                              deck: deck,
-                              roundSeconds: roundSeconds,
-                            ),
-                          ),
-                        ),
-                      ),
-                      OutlinedButton.icon(
-                        icon: const Icon(Icons.home),
-                        label: const Text('Decks'),
-                        onPressed: () => Navigator.of(context).pop(),
-                      ),
-                    ],
+                  Text(
+                    score == 1 ? 'word guessed' : 'words guessed',
+                    style: const TextStyle(fontSize: 20, color: Colors.white),
                   ),
                 ],
               ),
@@ -70,7 +59,7 @@ class ResultsScreen extends StatelessWidget {
               child: results.isEmpty
                   ? const Center(child: Text('No cards played'))
                   : ListView.builder(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      padding: const EdgeInsets.symmetric(vertical: 12),
                       itemCount: results.length,
                       itemBuilder: (context, i) {
                         final r = results[i];
@@ -79,18 +68,51 @@ class ResultsScreen extends StatelessWidget {
                             r.correct ? Icons.check_circle : Icons.cancel,
                             color: r.correct
                                 ? Colors.greenAccent
-                                : Colors.orangeAccent,
+                                : Colors.white24,
                           ),
                           title: Text(
                             r.word,
                             style: TextStyle(
                               fontSize: 20,
-                              color: r.correct ? null : Colors.white54,
+                              fontWeight: r.correct
+                                  ? FontWeight.w700
+                                  : FontWeight.normal,
+                              color: r.correct ? null : Colors.white38,
                             ),
                           ),
                         );
                       },
                     ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: OutlinedButton.icon(
+                      icon: const Icon(Icons.home),
+                      label: const Text('Decks'),
+                      onPressed: () => Navigator.of(context).pop(),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: FilledButton.icon(
+                      icon: const Icon(Icons.replay),
+                      label: const Text('Play again'),
+                      onPressed: () => Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (_) => GameScreen(
+                            deck: deck,
+                            roundSeconds: roundSeconds,
+                            haptics: haptics,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),

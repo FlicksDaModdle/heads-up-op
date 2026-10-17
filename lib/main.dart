@@ -1,35 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'orientation.dart';
 import 'screens/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // The game is played with the phone held sideways against the forehead.
-  await SystemChrome.setPreferredOrientations([
-    DeviceOrientation.landscapeLeft,
-    DeviceOrientation.landscapeRight,
-  ]);
+  // Menus are portrait; the game screen switches to landscape itself.
+  await SystemChrome.setPreferredOrientations(portraitOrientations);
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
-  runApp(const HeadsUpApp());
+  runApp(const FrenzyApp());
 }
 
-class HeadsUpApp extends StatelessWidget {
-  const HeadsUpApp({super.key});
+class FrenzyApp extends StatelessWidget {
+  const FrenzyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Heads Up',
+      title: 'Forehead Frenzy',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF3D5AFE),
+          seedColor: const Color(0xFFFF3D7F),
           brightness: Brightness.dark,
         ),
-        scaffoldBackgroundColor: const Color(0xFF12131A),
+        scaffoldBackgroundColor: const Color(0xFF140F2E),
       ),
       home: const HomeScreen(),
     );

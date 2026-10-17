@@ -1,4 +1,4 @@
-package com.flicksdamoddle.heads_up
+package com.flicksdamoddle.forehead_frenzy
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,10 +1,11 @@
 // Built-in decks. Names, blurbs and word lists are original to this project.
+import { coreExtras } from './moreDecks.ts';
 import type { Deck } from './types';
 
-export const builtInDecks: Deck[] = [
+const baseDecks: Deck[] = [
   {
     id: "wild-things",
-    name: "Wild Things",
+    name: "Animals",
     emoji: "🦒",
     colors: ["#7CFF6B", "#0E9F48"],
     panel: "#0E7A3A",
@@ -45,7 +46,7 @@ export const builtInDecks: Deck[] = [
   },
   {
     id: "big-screen",
-    name: "Big Screen",
+    name: "Movies",
     emoji: "🎬",
     colors: ["#FF5A5F", "#8E0E3C"],
     panel: "#5B0B2B",
@@ -86,7 +87,7 @@ export const builtInDecks: Deck[] = [
   },
   {
     id: "mime-time",
-    name: "Mime Time",
+    name: "Charades",
     emoji: "🎭",
     colors: ["#ECEFF1", "#37474F"],
     panel: "#FFFFFF",
@@ -127,7 +128,7 @@ export const builtInDecks: Deck[] = [
   },
   {
     id: "snack-attack",
-    name: "Snack Attack",
+    name: "Food & Drinks",
     emoji: "🍕",
     colors: ["#FFE45C", "#FF8A00"],
     panel: "#FF7A00",
@@ -168,7 +169,7 @@ export const builtInDecks: Deck[] = [
   },
   {
     id: "famous-faces",
-    name: "Famous Faces",
+    name: "Famous Characters",
     emoji: "🦸",
     colors: ["#C77DFF", "#5A189A"],
     panel: "#3C096C",
@@ -209,7 +210,7 @@ export const builtInDecks: Deck[] = [
   },
   {
     id: "game-on",
-    name: "Game On",
+    name: "Sports",
     emoji: "🏀",
     colors: ["#4FC3F7", "#0D47A1"],
     panel: "#0B3D91",
@@ -250,7 +251,7 @@ export const builtInDecks: Deck[] = [
   },
   {
     id: "nine-to-five",
-    name: "Nine to Five",
+    name: "Jobs",
     emoji: "👩‍🚀",
     colors: ["#64FFDA", "#00796B"],
     panel: "#00594F",
@@ -285,13 +286,13 @@ export const builtInDecks: Deck[] = [
       "Electrician",
       "Judge",
       "Babysitter",
-      "Pirate",
+      "Pharmacist",
       "Referee",
     ],
   },
   {
     id: "globetrotter",
-    name: "Globetrotter",
+    name: "Places",
     emoji: "🌍",
     colors: ["#FFD180", "#D84315"],
     panel: "#8D2B0B",
@@ -331,3 +332,15 @@ export const builtInDecks: Deck[] = [
     ],
   },
 ];
+
+/** Built-in decks plus the extra words from decks/extra/*.txt (deduplicated). */
+export const builtInDecks: Deck[] = baseDecks.map((deck) => {
+  const seen = new Set(deck.words.map((w) => w.toLowerCase()));
+  const extra = (coreExtras[deck.id] ?? []).filter((w) => {
+    const key = w.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  return { ...deck, words: [...deck.words, ...extra] };
+});

@@ -3,7 +3,7 @@
     "name": "Forehead Frenzy",
     "slug": "forehead-frenzy",
     "version": "2.0.0",
-    "orientation": "default",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "backgroundColor": "#1E8EF5",
@@ -31,7 +31,7 @@
       [
         "expo-screen-orientation",
         {
-          "initialOrientation": "PORTRAIT_UP"
+          "initialOrientation": "LANDSCAPE"
         }
       ],
       [
@@ -42,7 +42,9 @@
           "resizeMode": "contain",
           "backgroundColor": "#1E8EF5"
         }
-      ]
+      ],
+      "expo-audio",
+      "expo-asset"
     ]
   }
 }

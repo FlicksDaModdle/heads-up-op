@@ -1,59 +1,59 @@
-totally-90s|Totally '90s|📼||The 1990s! Toys, trends, shows and songs.
+totally-90s|The '90s|📼||The 1990s! Toys, trends, shows and songs.
 Tamagotchi, Game Boy, Pogs, Furby, Beanie Babies, Walkman, Dial-up internet, Pager, Blockbuster video, Spice Girls, Backstreet Boys, Nirvana, Macarena, Pokémon cards, Titanic, Friends, Fresh Prince, Jurassic Park, Rollerblades, Slap bracelet, Scrunchie, Frosted tips, Y2K bug, Floppy disk, Space Jam, Nintendo 64, Lisa Frank, Tie-dye, Boy band, Hacky sack
 
-neon-80s|Neon '80s|🕹️||The 1980s! Arcades, big hair and synth-pop.
+neon-80s|The '80s|🕹️||The 1980s! Arcades, big hair and synth-pop.
 Pac-Man, Rubik's Cube, Walkman, Cassette tape, Breakdancing, Leg warmers, Mullet, Shoulder pads, Michael Jackson, Madonna, Back to the Future, E.T., Ghostbusters, Arcade, Boombox, VHS, Atari, Cabbage Patch Kids, Jazzercise, Neon colors, Mohawk, Moonwalk, MTV, Top Gun, Synthesizer, Hair metal, Space Invaders, Smiley face, Teenage Mutant Ninja Turtles, Aerobics
 
-y2k|Y2K & the 2000s|💿||The 2000s! Flip phones, frosted lip gloss and pop-punk.
-Flip phone, iPod, MySpace, Razr phone, Low-rise jeans, Trucker hat, Juicy tracksuit, Burned CD, MSN Messenger, Napster, Britney Spears, Paris Hilton, American Idol, High School Musical, Harry Potter, The Lord of the Rings, Shrek, Nintendo Wii, Guitar Hero, Webkinz, Crocs, Bluetooth headset, Emo, Flash mob, Ringtone, Facebook poke, BlackBerry, Netbook, Heelys, Polaroid
+y2k|The 2000s|💿||The 2000s! Flip phones, frosted lip gloss and pop-punk.
+Flip phone, iPod, MySpace, Razr phone, Low-rise jeans, Trucker hat, Juicy tracksuit, Burned CD, MSN Messenger, Napster, Britney Spears, Paris Hilton, American Idol, High School Musical, Harry Potter, The Lord of the Rings, Shrek, Nintendo Wii, Guitar Hero, Webkinz, Crocs, Bluetooth headset, Emo, Flash mob, Ringtone, Facebook poke, BlackBerry, Netbook, Heelys
 
 the-2010s|The 2010s|📲||The 2010s! Apps, memes and megahits.
-Instagram, Snapchat, Vine, Fidget spinner, Ice Bucket Challenge, Gangnam Style, Harlem Shake, Selfie stick, Pokémon Go, Fortnite, Minecraft, Game of Thrones, Frozen, Avengers: Endgame, Hunger Games, Uptown Funk, Despacito, Dab, Planking, Hoverboard, Emoji movie, Hashtag, Tinder, Uber, Netflix and chill, Bottle flip, Mannequin Challenge, Floss dance, Kim Kardashian, Grumpy Cat
+Instagram, Snapchat, Vine, Fidget spinner, Ice Bucket Challenge, Gangnam Style, Harlem Shake, Selfie stick, Pokémon Go, Fortnite, Minecraft, Game of Thrones, Frozen, Avengers: Endgame, Hunger Games, Uptown Funk, Despacito, Dab, Planking, Hoverboard, The Emoji Movie, Hashtag, Tinder, Uber, Netflix and chill, Bottle flip, Mannequin Challenge, Floss dance, Kim Kardashian, Grumpy Cat
 
-famous-authors|Famous Authors|✒️||Writers! Name their books, characters, or style.
-William Shakespeare, J.K. Rowling, Stephen King, Jane Austen, Charles Dickens, Mark Twain, Agatha Christie, Ernest Hemingway, George Orwell, Dr. Seuss, Roald Dahl, Tolkien, Edgar Allan Poe, Leo Tolstoy, Homer, Maya Angelou, Emily Dickinson, Oscar Wilde, Virginia Woolf, F. Scott Fitzgerald, Harper Lee, Mary Shelley, Charlotte Brontë, Arthur Conan Doyle, Rick Riordan, Suzanne Collins, Dan Brown, George R.R. Martin, C.S. Lewis, Lewis Carroll
+famous-authors|Authors|✒️||Writers! Name their books, characters, or style.
+William Shakespeare, J.K. Rowling, Stephen King, Jane Austen, Charles Dickens, Mark Twain, Agatha Christie, Ernest Hemingway, George Orwell, Dr. Seuss, Roald Dahl, J.R.R. Tolkien, Edgar Allan Poe, Leo Tolstoy, Homer, Maya Angelou, Emily Dickinson, Oscar Wilde, Virginia Woolf, F. Scott Fitzgerald, Harper Lee, Mary Shelley, Charlotte Brontë, Arthur Conan Doyle, Rick Riordan, Suzanne Collins, Dan Brown, George R.R. Martin, C.S. Lewis, Lewis Carroll
 
-bookworm|Bookworm|📚||Famous books. Describe the plot or the characters, never the title.
-Harry Potter, The Hobbit, Pride and Prejudice, 1984, To Kill a Mockingbird, The Great Gatsby, Moby-Dick, Frankenstein, Dracula, The Hunger Games, Romeo and Juliet, Little Women, Alice in Wonderland, The Little Prince, Charlotte's Web, Matilda, The Da Vinci Code, Twilight, Of Mice and Men, Lord of the Flies, The Odyssey, War and Peace, Don Quixote, Jane Eyre, Wuthering Heights, The Cat in the Hat, Percy Jackson, Diary of a Wimpy Kid, The Chronicles of Narnia, Treasure Island
+bookworm|Books|📚||Famous books. Describe the plot or the characters, never the title.
+Harry Potter, The Hobbit, Pride and Prejudice, 1984, To Kill a Mockingbird, The Great Gatsby, Moby-Dick, Frankenstein, Dracula, The Hunger Games, Little Women, Alice in Wonderland, The Little Prince, Charlotte's Web, Matilda, The Da Vinci Code, Twilight, Of Mice and Men, Lord of the Flies, The Odyssey, War and Peace, Don Quixote, Jane Eyre, Wuthering Heights, The Cat in the Hat, Percy Jackson, Diary of a Wimpy Kid, The Chronicles of Narnia, Treasure Island
 
 animated-movies|Animated Movies|🎞️||Cartoon films. Describe the story, sing a song, or name a character.
-Toy Story, Frozen, The Lion King, Shrek, Finding Nemo, Up, Moana, Coco, Aladdin, Beauty and the Beast, The Little Mermaid, Cinderella, Snow White, Encanto, Zootopia, Ratatouille, WALL-E, Inside Out, Monsters Inc., Despicable Me, Kung Fu Panda, How to Train Your Dragon, Ice Age, Madagascar, Cars, The Incredibles, Spirited Away, My Neighbor Totoro, Tangled, Spider-Verse
+Toy Story, Frozen, The Lion King, Shrek, Finding Nemo, Up, Moana, Coco, Aladdin, Beauty and the Beast, The Little Mermaid, Cinderella, Snow White, Encanto, Zootopia, Ratatouille, WALL-E, Inside Out, Monsters Inc., Despicable Me, Kung Fu Panda, How to Train Your Dragon, Ice Age, Madagascar, Cars, The Incredibles, Spirited Away, My Neighbor Totoro, Tangled, Spider-Man: Into the Spider-Verse
 
-level-up|Level Up|🎮||Video games. Describe the gameplay or the hero!
+level-up|Video Games|🎮||Video games. Describe the gameplay or the hero!
 Minecraft, Fortnite, Super Mario Bros., The Legend of Zelda, Tetris, Pac-Man, Pokémon, Call of Duty, Grand Theft Auto, The Sims, Roblox, Among Us, Animal Crossing, Halo, Sonic the Hedgehog, Street Fighter, Mortal Kombat, FIFA, Mario Kart, Donkey Kong, Space Invaders, World of Warcraft, League of Legends, Overwatch, Final Fantasy, Elden Ring, Portal, Angry Birds, Candy Crush, Rocket League
 
-trailblazing-women|Trailblazing Women|👩||Famous women from history and today. Describe what made them famous.
+trailblazing-women|Famous Women|👩||Famous women from history and today. Describe what made them famous.
 Marie Curie, Frida Kahlo, Cleopatra, Joan of Arc, Rosa Parks, Amelia Earhart, Malala Yousafzai, Florence Nightingale, Mother Teresa, Queen Elizabeth II, Oprah Winfrey, Serena Williams, Michelle Obama, Anne Frank, Coco Chanel, Princess Diana, Harriet Tubman, Ada Lovelace, Jane Goodall, Helen Keller, Simone Biles, Beyoncé, Ruth Bader Ginsburg, Sally Ride, Greta Thunberg, Mary Shelley, Indira Gandhi, Billie Jean King, Maya Angelou, Taylor Swift
 
-lost-in-space|Lost in Space|🚀||Space adventures, real and imaginary. Describe it or act it out!
-Astronaut, Rocket, Space station, Moon landing, Mars rover, Black hole, Comet, Asteroid, Galaxy, Milky Way, Alien, UFO, Satellite, Telescope, Spacesuit, Zero gravity, Saturn's rings, Shooting star, Solar system, Neil Armstrong, Countdown, Launch pad, Space shuttle, Supernova, Meteor shower, Lunar eclipse, Lightyear, Wormhole, Spaceship, Constellation
+lost-in-space|Space|🚀||Space adventures, real and imaginary. Describe it or act it out!
+Astronaut, Rocket, Space station, Moon landing, Mars rover, Black hole, Comet, Asteroid, Galaxy, Milky Way, Alien, UFO, Satellite, Telescope, Spacesuit, Zero gravity, Saturn's rings, Shooting star, Solar system, Neil Armstrong, Countdown, Launch pad, Space shuttle, Supernova, Meteor shower, Lunar eclipse, Wormhole, Spaceship, Constellation
 
-women-inventors|Women Who Invented|💡||Things invented by women. Describe what it does!
-Windshield wipers, Dishwasher, Chocolate chip cookies, Monopoly, Paper bag, Kevlar, Frequency hopping (Wi-Fi), Home security system, Life raft, Coffee filter, Computer compiler, Disposable diaper, Fire escape, Liquid Paper, Solar heating, Ice cream maker, Medical syringe, Retractable dog leash, Car heater, Fold-out bed, Scotchgard, Electric refrigerator, Signal flare
+women-inventors|Inventions by Women|💡||Things invented by women. Describe what it does!
+Windshield wipers, Dishwasher, Chocolate chip cookies, Monopoly, Paper bag, Kevlar, Frequency hopping radio, Home security system, Life raft, Coffee filter, Computer compiler, Disposable diaper, Fire escape, Liquid Paper, Solar heating, Ice cream maker, Medical syringe, Retractable dog leash, Car heater, Fold-out bed, Scotchgard, Electric refrigerator, Signal flare
 
-fifty-states|50 States|🗽||US states and capitals. Describe where it is or what it's famous for.
+fifty-states|US States & Capitals|🗽||US states and capitals. Describe where it is or what it's famous for.
 California, Texas, Florida, New York, Hawaii, Alaska, Nevada, Arizona, Colorado, Washington, Oregon, Utah, Montana, Georgia, Louisiana, Tennessee, Ohio, Michigan, Illinois, Massachusetts, Washington D.C., Sacramento, Austin, Tallahassee, Albany, Honolulu, Juneau, Nashville, Boston, Denver
 
-mr-president|Mr. President|🇺🇸||US presidents. Name their era, nickname, or famous moment.
+mr-president|US Presidents|🇺🇸||US presidents. Name their era, nickname, or famous moment.
 George Washington, Abraham Lincoln, Thomas Jefferson, John Adams, Theodore Roosevelt, Franklin D. Roosevelt, John F. Kennedy, Richard Nixon, Ronald Reagan, Bill Clinton, George W. Bush, Barack Obama, Donald Trump, Joe Biden, Jimmy Carter, Lyndon B. Johnson, Dwight D. Eisenhower, Harry S. Truman, Woodrow Wilson, Ulysses S. Grant, Andrew Jackson, James Madison, James Monroe, Gerald Ford, George H.W. Bush, Herbert Hoover, Calvin Coolidge, William Taft, John Quincy Adams, Grover Cleveland
 
-big-brains|Big Brains|🧪||Scientists and inventors. Describe their big discovery.
+big-brains|Scientists|🧪||Scientists and inventors. Describe their big discovery.
 Albert Einstein, Isaac Newton, Marie Curie, Charles Darwin, Nikola Tesla, Thomas Edison, Galileo Galilei, Stephen Hawking, Leonardo da Vinci, Alexander Graham Bell, Louis Pasteur, Ada Lovelace, Alan Turing, Rosalind Franklin, Archimedes, Nicolaus Copernicus, Gregor Mendel, Jane Goodall, Carl Sagan, Neil deGrasse Tyson, Wright Brothers, Johannes Kepler, Benjamin Franklin, Alexander Fleming, Dmitri Mendeleev, Pythagoras, Tim Berners-Lee, Katherine Johnson, Sigmund Freud, Robert Oppenheimer
 
 summer-charades|Summer Charades|🏖️||Summer edition: act it out, no talking!
 Applying sunscreen, Surfing, Building a sandcastle, Eating a melting ice cream, Swatting a mosquito, Flipping burgers, Water balloon fight, Cannonball dive, Paddleboarding, Getting sunburned, Hula dancing, Lifeguarding, Jet skiing, Beach volleyball, Running on hot sand, Setting up a tent, Roasting marshmallows, Catching fireflies, Camping in the rain, Fanning yourself, Sprinkler dance, Tanning, Snorkeling, Fishing off a dock, Slurping a slushie, Riding a bike, Pool noodle fight, Picnic with ants, Seagull stealing fries, Kayaking
 
-office-life|Office Life|💼|NEW|Office and work life. Describe it or act it out!
-Coffee machine, Printer jam, Stapler, Meeting, Deadline, Email, Spreadsheet, Boss, Promotion, Lunch break, Water cooler, Video call, Mute button, Reply all, Cubicle, Name tag, Office party, Paycheck, Overtime, Sticky notes, Whiteboard, Presentation, Coworker, Intern, Elevator pitch, Desk chair, Keyboard, Calendar invite, Out of office, Commute
+office-life|Office|💼|NEW|Office and work life. Describe it or act it out!
+Coffee machine, Printer jam, Stapler, Meeting, Deadline, Email, Spreadsheet, Boss, Promotion, Lunch break, Water cooler, Video call, Reply all, Cubicle, Name tag, Office party, Paycheck, Overtime, Sticky notes, Whiteboard, Presentation, Coworker, Intern, Elevator pitch, Desk chair, Keyboard, Calendar invite, Out of office, Commute
 
-once-upon-a-time|Once Upon a Time|🧚||Fairy tales and their characters. Tell the story without the name!
-Cinderella, Snow White, Sleeping Beauty, Rapunzel, Little Red Riding Hood, Goldilocks, Hansel and Gretel, Jack and the Beanstalk, The Three Little Pigs, Rumpelstiltskin, The Frog Prince, The Little Mermaid, Pinocchio, Peter Pan, Puss in Boots, The Ugly Duckling, Thumbelina, The Gingerbread Man, The Princess and the Pea, Big Bad Wolf, Fairy godmother, Magic mirror, Glass slipper, Poisoned apple, Wicked stepmother, Beauty and the Beast, Aladdin, Tooth fairy, Genie, Dragon
+once-upon-a-time|Fairy Tales & Fables|🧚||Fairy tales and their characters. Tell the story without the name!
+Cinderella, Snow White, Sleeping Beauty, Rapunzel, Little Red Riding Hood, Goldilocks, Hansel and Gretel, Jack and the Beanstalk, The Three Little Pigs, Rumpelstiltskin, The Frog Prince, The Little Mermaid, Pinocchio, Puss in Boots, The Ugly Duckling, Thumbelina, The Gingerbread Man, The Princess and the Pea, Big Bad Wolf, Fairy godmother, Magic mirror, Glass slipper, Poisoned apple, Wicked stepmother, Beauty and the Beast, Aladdin, Tooth fairy, Genie, Dragon
 
-game-night|Game Night|♟️|NEW|Board games and card games. Describe how you play!
+game-night|Board & Card Games|♟️|NEW|Board games and card games. Describe how you play!
 Chess, Monopoly, Scrabble, Uno, Checkers, Jenga, Twister, Clue, Battleship, Connect Four, Risk, Catan, Trivial Pursuit, Pictionary, Operation, Guess Who, Candy Land, Snakes and Ladders, Backgammon, Dominoes, Poker, Go Fish, Solitaire, Mahjong, Yahtzee, Ticket to Ride, Exploding Kittens, Codenames, Mouse Trap, Cards Against Humanity
 
-phone-games|Phone Games|📱||Mobile games. Describe the gameplay or do the swipe!
+phone-games|Mobile Games|📱||Mobile games. Describe the gameplay or do the swipe!
 Candy Crush, Angry Birds, Subway Surfers, Temple Run, Clash of Clans, Clash Royale, Fruit Ninja, Pokémon Go, Flappy Bird, Doodle Jump, Cut the Rope, Plants vs. Zombies, Among Us, Wordle, 2048, Crossy Road, Geometry Dash, Hay Day, Monument Valley, Roblox, Genshin Impact, Brawl Stars, PUBG Mobile, Words With Friends, Piano Tiles, Stumble Guys, Royal Match, Coin Master, Snake, Tetris
 
-tech-giants|Tech Giants|💻||Tech companies and their founders. Describe what they make!
+tech-giants|Tech|💻||Tech companies and their founders. Describe what they make!
 Apple, Microsoft, Google, Amazon, Meta, Tesla, Netflix, Samsung, Intel, Nvidia, IBM, Sony, Spotify, Uber, Airbnb, Twitter, TikTok, OpenAI, Anthropic, Adobe, Oracle, Dell, Zoom, Steve Jobs, Bill Gates, Elon Musk, Mark Zuckerberg, Jeff Bezos, Larry Page, Silicon Valley

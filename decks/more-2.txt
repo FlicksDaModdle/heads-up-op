@@ -1,41 +1,41 @@
-crush-hour|Crush Hour|💘||Flirty, not dirty. Describe it with your best wink.
+crush-hour|Flirty|💘||Flirty, not dirty. Describe it with your best wink.
 First date, Love letter, Wink, Blind date, Slow dance, Candlelit dinner, Pickup line, Butterflies, Holding hands, Love song, Rose petals, Secret admirer, Dating app, Kiss on the cheek, Matching outfits, Text back, Heart emoji, Movie date, Promise ring, Mistletoe, Couples costume, Stargazing, Sharing dessert, Serenade, Proposal, Love at first sight, Third wheel, Valentine card, Crush, Puppy love
 
-after-dark|After Dark|🌶️||Grown-up party words (PG-13). Describe or act it out, and keep it classy.
+after-dark|Night Out|🌶️||Grown-up party words (PG-13). Describe or act it out, and keep it classy.
 Hangover, Bachelor party, Walk of shame, Tequila shot, Beer pong, Karaoke bar, Last call, Bouncer, Speed dating, Breakup text, Ex, Tinder swipe, Dance-off, Mood lighting, Slow jam, Ladies night, Fake ID, Midnight snack, Club bathroom selfie, Wine tasting, Late-night text, Love bite, Flirt, Skinny dipping, Truth or dare, Spin the bottle, Bar crawl, Afterparty, Designated driver, Cocktail
 
 pop-culture|Pop Culture|✨|NEW|Things everyone's talking about. Describe, quote, or act it out.
 Viral dance, Meme, Influencer, Selfie stick, Unboxing video, Podcast, Livestream, Reality TV, Red carpet, Award show, Emoji, Hashtag, Binge-watching, TikTok, Fan theory, Cosplay, Boy band, Spoiler alert, Plot twist, Cancel culture, Clickbait, Going viral, Duck face, Photobomb, Rickroll, Mukbang, ASMR, Reboot, Streaming service, Blockbuster sequel
 
-mount-olympus|Mount Olympus|🏛️||Gods, heroes and monsters from Greek myths. Tell their story without the name.
+mount-olympus|Greek Mythology|🏛️||Gods, heroes and monsters from Greek myths. Tell their story without the name.
 Zeus, Hera, Poseidon, Hades, Athena, Apollo, Artemis, Aphrodite, Ares, Hermes, Dionysus, Hephaestus, Hercules, Achilles, Odysseus, Perseus, Medusa, Minotaur, Cyclops, Pegasus, Trojan Horse, Pandora's Box, Icarus, Narcissus, Cerberus, Hydra, Sirens, Atlas, Prometheus, Persephone
 
-sing-along|Sing-Along|🎶|POPULAR|Sing it! Hum, la-la, or lip-sync the song on the card until they guess the title.
+sing-along|Songs|🎶|POPULAR|Sing it! Hum, la-la, or lip-sync the song on the card until they guess the title.
 Happy Birthday, Bohemian Rhapsody, Let It Go, Baby Shark, Twinkle Twinkle Little Star, YMCA, Dancing Queen, Billie Jean, Sweet Caroline, Don't Stop Believin', Hey Jude, Shake It Off, Thriller, Wonderwall, Uptown Funk, Rolling in the Deep, I Will Survive, Livin' on a Prayer, Old Town Road, Despacito, Single Ladies, We Will Rock You, Macarena, Hotel California, Shape of You, Mamma Mia, Respect, Africa, Stayin' Alive, Hallelujah
 
-snow-day|Snow Day Charades|❄️||Winter edition: act it out, no talking!
+snow-day|Winter Charades|❄️||Winter edition: act it out, no talking!
 Building a snowman, Ice skating, Snowball fight, Skiing, Sledding, Shoveling snow, Making snow angels, Drinking hot cocoa, Slipping on ice, Putting on mittens, Catching snowflakes, Scraping a windshield, Shivering, Snowboarding, Ice fishing, Knitting a scarf, Warming hands by a fire, Wearing earmuffs, Igloo building, Curling, Chattering teeth, Penguin waddle, Polar bear plunge, Blowing your nose, Wrapping presents, Ice hockey, Dog sledding, Frozen tongue on a pole, Avalanche, Hibernating bear
 
-city-hopper|City Hopper|🏙️||Cities around the world. Describe the landmarks, food or language.
+city-hopper|Cities|🏙️||Cities around the world. Describe the landmarks, food or language.
 Paris, London, New York, Tokyo, Rome, Sydney, Dubai, Barcelona, Rio de Janeiro, Cairo, Istanbul, Bangkok, Venice, Amsterdam, Hong Kong, Los Angeles, Las Vegas, Moscow, Mumbai, Singapore, Mexico City, Toronto, Berlin, Athens, Seoul, Beijing, San Francisco, Cape Town, Kyiv, Buenos Aires
 
-movie-stars|Movie Stars|⭐||Actors and actresses. Name their movies or do an impression.
+movie-stars|Actors & Actresses|⭐||Actors and actresses. Name their movies or do an impression.
 Tom Hanks, Meryl Streep, Leonardo DiCaprio, Julia Roberts, Will Smith, Scarlett Johansson, Dwayne Johnson, Brad Pitt, Angelina Jolie, Tom Cruise, Jennifer Lawrence, Denzel Washington, Johnny Depp, Margot Robbie, Keanu Reeves, Zendaya, Morgan Freeman, Emma Watson, Ryan Reynolds, Sandra Bullock, Robert Downey Jr., Nicole Kidman, Jackie Chan, Marilyn Monroe, Audrey Hepburn, Charlie Chaplin, Timothée Chalamet, Viola Davis, Hugh Jackman, Jim Carrey
 
-great-outdoors|Great Outdoors|🏕️|NEW|Nature and outdoor adventures. Describe it or act it out.
-Campfire, Tent, Hiking boots, Waterfall, Canyon, Volcano, Glacier, Rainforest, Desert, Cave, Compass, Sleeping bag, Kayak, Fishing rod, Binoculars, Mosquito, Bear spray, Trail map, S'mores, Mountain peak, Sunrise, Meadow, River rafting, Rock climbing, Lighthouse, Pine cone, Wildflowers, Thunderstorm, Rainbow, Northern lights
+great-outdoors|Nature & Outdoors|🏕️|NEW|Nature and outdoor adventures. Describe it or act it out.
+Campfire, Tent, Hiking boots, Waterfall, Canyon, Volcano, Glacier, Rainforest, Desert, Cave, Compass, Sleeping bag, Kayak, Fishing rod, Binoculars, Mosquito, Bear spray, Trail map, S'mores, Mountain peak, Sunrise, Meadow, River rafting, Rock climbing, Pine cone, Wildflowers, Thunderstorm, Rainbow, Northern lights
 
-wonders|Wonders of the World|🗺️||Famous sights to see. Say where it is or what it looks like.
-Eiffel Tower, Great Wall of China, Taj Mahal, Colosseum, Statue of Liberty, Machu Picchu, Pyramids of Giza, Stonehenge, Grand Canyon, Niagara Falls, Mount Everest, Big Ben, Sydney Opera House, Christ the Redeemer, Leaning Tower of Pisa, Petra, Golden Gate Bridge, Mount Fuji, Angkor Wat, Great Barrier Reef, Burj Khalifa, Acropolis, Chichen Itza, Victoria Falls, Sagrada Família, Times Square, Easter Island statues, Mount Rushmore, Hollywood Sign, Northern Lights
+wonders|Landmarks|🗺️||Famous sights to see. Say where it is or what it looks like.
+Eiffel Tower, Great Wall of China, Taj Mahal, Colosseum, Statue of Liberty, Machu Picchu, Pyramids of Giza, Stonehenge, Grand Canyon, Niagara Falls, Mount Everest, Big Ben, Sydney Opera House, Christ the Redeemer, Leaning Tower of Pisa, Petra, Golden Gate Bridge, Mount Fuji, Angkor Wat, Great Barrier Reef, Burj Khalifa, Acropolis, Chichen Itza, Victoria Falls, Sagrada Família, Times Square, Easter Island statues, Mount Rushmore, Hollywood Sign
 
-someday-list|Someday List|📝||Bucket-list dreams. Describe the adventure!
+someday-list|Bucket List|📝||Bucket-list dreams. Describe the adventure!
 Skydiving, Swimming with dolphins, Seeing the Northern Lights, Running a marathon, Hot air balloon ride, Climbing Kilimanjaro, Learning to surf, Writing a book, Road trip across the country, Bungee jumping, Visiting all seven continents, Scuba diving, Going on safari, Riding a camel, Getting a tattoo, Learning a language, Sleeping under the stars, Zip lining, Seeing a volcano, Flying first class, Meeting a celebrity, Swimming with sharks, Owning a farm, Learning piano, Going to space, Walking the Great Wall, Attending the Olympics, Backpacking Europe, Paragliding, Building a treehouse
 
-holiday-mode|Holiday Mode|✈️|NEW|Travel and vacation words. Describe your dream trip!
+holiday-mode|Travel|✈️|NEW|Travel and vacation words. Describe your dream trip!
 Passport, Suitcase, Airport security, Jet lag, Boarding pass, Hotel lobby, Room service, Beach towel, Sunscreen, Souvenir, Postcard, Cruise ship, Road trip, Travel pillow, Tour guide, Duty free, Backpacker, All-inclusive, Flip-flops, Snorkel, Customs, Window seat, Theme park, Lost luggage, Map, Rental car, Infinity pool, Selfie spot, Time zone, Layover
 
-abc-123|ABCs & 123s|🔤||Letters and numbers! Draw it in the air, make it with your body, or give hints.
+abc-123|Letters, Numbers & Symbols|🔤||Letters and numbers! Draw it in the air, make it with your body, or give hints.
 Letter A, Letter B, Letter C, Letter D, Letter E, Letter K, Letter M, Letter O, Letter Q, Letter S, Letter T, Letter W, Letter X, Letter Y, Letter Z, Number 0, Number 1, Number 2, Number 3, Number 4, Number 5, Number 6, Number 7, Number 8, Number 9, Number 10, Number 100, A dozen, Infinity, Pi
 
-elements|The Elements|⚗️||Periodic table time! Describe what it's used for or where you find it.
+elements|Periodic Table|⚗️||Periodic table time! Describe what it's used for or where you find it.
 Hydrogen, Helium, Oxygen, Carbon, Nitrogen, Gold, Silver, Iron, Copper, Aluminum, Lead, Mercury, Uranium, Sodium, Chlorine, Calcium, Potassium, Neon, Silicon, Zinc, Tin, Platinum, Titanium, Lithium, Sulfur, Magnesium, Iodine, Nickel, Plutonium, Argon

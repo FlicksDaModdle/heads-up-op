@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
@@ -47,7 +47,15 @@ jobs:
       # directly as a sideloaded APK.
       - name: Build release APK
         working-directory: android
-        run: ./gradlew assembleRelease --no-daemon
+        # Maven Central occasionally fails to serve a dependency (it happened
+        # once with kotlin-stdlib); wait and retry before giving up.
+        run: |
+          for attempt in 1 2 3; do
+            ./gradlew assembleRelease --no-daemon && exit 0
+            echo "Gradle build failed (attempt $attempt); retrying in 60s..."
+            sleep 60
+          done
+          exit 1
       - run: |
           mkdir -p dist
           cp android/app/build/outputs/apk/release/app-release.apk dist/ForeheadFrenzy.apk

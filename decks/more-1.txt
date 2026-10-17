@@ -1,35 +1,35 @@
-big-brands|Big Brands|🏷️|POPULAR|Describe the logo, the slogan, or what they sell. No saying the brand name!
+big-brands|Brands|🏷️|POPULAR|Describe the logo, the slogan, or what they sell. No saying the brand name!
 Nike, Apple, Coca-Cola, Pepsi, Lego, IKEA, Amazon, Google, Starbucks, Disney, Toyota, Tesla, Samsung, Adidas, Netflix, YouTube, Spotify, Burger King, KFC, Subway, Red Bull, Nintendo, PlayStation, Barbie, Crayola, Doritos, Oreo, Nutella, Gucci, Rolex, Uber, Airbnb, Visa, Ferrari, Heinz
 
-mime-encore|Mime Time: Encore|🤹|POPULAR|More silent acting! Act out the action on the card. No talking, no sound effects.
+mime-encore|Charades 2|🤹|POPULAR|More silent acting! Act out the action on the card. No talking, no sound effects.
 Walking a tightrope, Riding a rollercoaster, Brushing a horse, Building a sandcastle, Blowing up a balloon, Flying a kite, Doing laundry, Changing a tire, Playing the drums, Catching a fish, Chopping onions, Rowing a canoe, Putting on makeup, Ironing a shirt, Climbing a mountain, Lifting weights, Skipping rope, Shaving, Eating spaghetti, Walking in high heels, Playing tennis, Hammering a nail, Washing a car, Conducting an orchestra, Being a statue, Popping popcorn, Escaping a bee, Opening a stuck jar, Sleepwalking, Taking a bath
 
-animal-antics|Animal Antics|🐒||Become the animal on the card using only your body. No noises allowed!
+animal-antics|Animal Charades|🐒||Become the animal on the card using only your body. No noises allowed!
 Monkey, Penguin, Kangaroo, Elephant, Snake, Crab, Flamingo, Frog, Chicken, Gorilla, Giraffe, Bunny, Eagle, Lobster, Octopus, T-Rex, Cat, Dog, Horse, Bear, Seal, Duck, Turtle, Butterfly, Spider, Crocodile, Owl, Cow, Peacock, Sloth
 
-toon-time|Toon Time|📺|POPULAR|Describe the cartoon, hum the theme song, or name the characters' friends.
-The Simpsons, SpongeBob SquarePants, Scooby-Doo, Tom and Jerry, Looney Tunes, Peppa Pig, Bluey, Family Guy, Rugrats, Pokémon, Dragon Ball Z, Phineas and Ferb, Adventure Time, Gravity Falls, The Flintstones, The Jetsons, Avatar: The Last Airbender, Teenage Mutant Ninja Turtles, Dexter's Laboratory, The Powerpuff Girls, Hey Arnold!, Paw Patrol, Futurama, South Park, Bob's Burgers, Rick and Morty, Ben 10, Arthur, Animaniacs, Garfield
+toon-time|TV Cartoons|📺|POPULAR|Describe the cartoon, hum the theme song, or name the characters' friends.
+The Simpsons, SpongeBob SquarePants, Scooby-Doo, Tom and Jerry, Looney Tunes, Peppa Pig, Bluey, Family Guy, Rugrats, Pokémon, Dragon Ball Z, Phineas and Ferb, Adventure Time, Gravity Falls, The Flintstones, The Jetsons, Avatar: The Last Airbender, Teenage Mutant Ninja Turtles, Dexter's Laboratory, The Powerpuff Girls, Hey Arnold!, Paw Patrol, Futurama, South Park, Bob's Burgers, Rick and Morty, Ben 10, Arthur, Animaniacs, Garfield and Friends
 
-family-grab-bag|Family Grab Bag|🎲|NEW|A little bit of everything, easy enough for the whole family.
+family-grab-bag|Family Mix|🎲|NEW|A little bit of everything, easy enough for the whole family.
 Birthday cake, Rainbow, Snowman, Pirate, Robot, Dinosaur, Pizza, Bicycle, Volcano, Treasure chest, Ice cream, Castle, Mermaid, Fire truck, Unicorn, Spider, Pancakes, Rocket, Umbrella, Sunglasses, Teddy bear, Dragon, Magician, Ghost, Banana, Superhero, Trampoline, Popcorn, Waterfall, Airplane
 
-home-sweet-home|Home Sweet Home|🛋️||Things you'll find around the house. Say what it's for or which room it lives in.
+home-sweet-home|Around the House|🛋️||Things you'll find around the house. Say what it's for or which room it lives in.
 Sofa, Toaster, Microwave, Bathtub, Lamp, Pillow, Fridge, Dishwasher, Toothbrush, Washing machine, Curtains, Doorbell, Remote control, Vacuum cleaner, Bookshelf, Kettle, Mirror, Blender, Ceiling fan, Rug, Coat hanger, Alarm clock, Frying pan, Smoke detector, Mailbox, Garden hose, Laundry basket, Light switch, Fireplace, Stairs
 
-music-legends|Music Legends|🎤|POPULAR|Sing a few notes, name a hit song, or describe their style. No saying the name!
+music-legends|Singers & Bands|🎤|POPULAR|Sing a few notes, name a hit song, or describe their style. No saying the name!
 Taylor Swift, Beyoncé, Elvis Presley, The Beatles, Michael Jackson, Madonna, Queen, Ed Sheeran, Adele, Drake, Rihanna, Bruno Mars, Lady Gaga, ABBA, Bob Marley, Eminem, Ariana Grande, Billie Eilish, Coldplay, The Rolling Stones, Whitney Houston, Justin Bieber, Dolly Parton, Frank Sinatra, Nirvana, BTS, Harry Styles, Shakira, Bad Bunny, Stevie Wonder
 
-capes-and-crooks|Capes & Crooks|🦸||Superheroes and the villains who fight them. Describe their powers, costume, or sidekick.
-Spider-Man, Batman, Superman, Wonder Woman, Iron Man, Captain America, Thor, Hulk, Black Widow, Black Panther, The Flash, Aquaman, Wolverine, Deadpool, Doctor Strange, Captain Marvel, The Joker, Lex Luthor, Thanos, Loki, Magneto, Catwoman, Green Goblin, Harley Quinn, Venom, Darth Vader, Bane, Poison Ivy, Ant-Man, Storm
+capes-and-crooks|Superheroes & Villains|🦸||Superheroes and the villains who fight them. Describe their powers, costume, or sidekick.
+Spider-Man, Batman, Superman, Wonder Woman, Iron Man, Captain America, Thor, Hulk, Black Widow, Black Panther, The Flash, Aquaman, Wolverine, Deadpool, Doctor Strange, Captain Marvel, The Joker, Lex Luthor, Thanos, Loki, Magneto, Catwoman, Green Goblin, Harley Quinn, Venom, Bane, Poison Ivy, Ant-Man, Storm
 
-toy-box|Toy Box|🧸||Toys and games for kids. Describe how you play with it!
+toy-box|Toys|🧸||Toys and games for kids. Describe how you play with it!
 Yo-yo, Teddy bear, Rubik's Cube, Jigsaw puzzle, Slinky, Building blocks, Toy car, Kite, Jump rope, Hula hoop, Spinning top, Play-Doh, Doll house, Water gun, Frisbee, Skateboard, Bubbles, Marbles, Etch A Sketch, Jack-in-the-box, Rocking horse, Pop-it, Fidget spinner, Toy train, Crayons, Action figure, Balloon animal, Glow stick, Kaleidoscope, Remote control car
 
-kids-corner|Kids' Corner|🧒|POPULAR|Easy words for younger players. Act, describe, or make the sound!
+kids-corner|Kids|🧒|POPULAR|Easy words for younger players. Act, describe, or make the sound!
 Apple, Ball, Cat, Dog, Sun, Moon, Star, Fish, Tree, Flower, Car, Bus, Train, Boat, Duck, Cookie, Shoe, Hat, Bed, Book, Baby, Clock, Cake, Frog, Pig, Lion, Bee, Rain, Milk, Egg
 
-recess|Recess|🎒|NEW|School days and playground fun. Describe it without saying the word!
+recess|School|🎒|NEW|School days and playground fun. Describe it without saying the word!
 Backpack, Pencil case, Teacher, Homework, Lunchbox, School bus, Slide, Swing, Monkey bars, Seesaw, Sandbox, Chalkboard, Eraser, Ruler, Calculator, Principal, Field trip, Spelling bee, Recess bell, Hall pass, Library card, Science fair, Gym class, Report card, Glue stick, Locker, Tag, Hopscotch, Cafeteria, Graduation
 
-party-starter|Party Starter|🎉||Party time! Describe it, act it out, or sing it.
+party-starter|Party|🎉||Party time! Describe it, act it out, or sing it.
 Confetti, DJ, Dance floor, Piñata, Karaoke, Party hat, Balloon arch, Limbo, Conga line, Glow sticks, Disco ball, Birthday candles, Punch bowl, Photo booth, Costume party, Surprise party, Musical chairs, Pizza delivery, Selfie, Fireworks, Bounce house, Pool party, Slow dance, Party favors, Streamers, Cake smash, Group photo, Sparklers, Charades, Party bus

@@ -1,9 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as Haptics from 'expo-haptics';
-import { useKeepAwake } from 'expo-keep-awake';
-import * as ScreenOrientation from 'expo-screen-orientation';
+import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 import { Accelerometer } from 'expo-sensors';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   Platform,
   Pressable,
@@ -18,6 +17,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { StripedCard } from '../components/ui';
 import { TiltDetector } from '../game/tilt';
 import type { CardResult, Deck } from '../game/types';
+import { play } from '../sound';
 import { colors, fonts } from '../theme';
 
 type Phase = 'ready' | 'countdown' | 'playing' | 'feedback' | 'timesUp';
@@ -29,20 +29,21 @@ const TIMES_UP_MS = 1500;
 
 export function GameScreen({
   deck,
+  words,
   roundSeconds,
   haptics,
   onQuit,
   onFinish,
 }: {
   deck: Deck;
+  /** Play order for this round (unseen words first). */
+  words: string[];
   roundSeconds: number;
   haptics: boolean;
   onQuit: () => void;
   onFinish: (results: CardResult[]) => void;
 }) {
-  useKeepAwake();
   const insets = useSafeAreaInsets();
-  const words = useMemo(() => [...deck.words].sort(() => Math.random() - 0.5), [deck]);
 
   const [phase, setPhase] = useState<Phase>('ready');
   const [countdown, setCountdown] = useState(COUNTDOWN_FROM);
@@ -88,6 +89,7 @@ export function GameScreen({
     if (phaseRef.current === 'playing') {
       results.current.push({ word: words[indexRef.current], correct: false });
     }
+    play('timesup');
     buzz(() => Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning));
     go('timesUp');
     pending.current = setTimeout(finish, TIMES_UP_MS);
@@ -96,6 +98,7 @@ export function GameScreen({
   const startRound = () => {
     // Whatever pose the player settled into during the countdown is neutral.
     detector.current.calibrate();
+    play('go');
     buzz(() => Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium));
     go('playing');
     let left = roundSeconds;
@@ -103,7 +106,10 @@ export function GameScreen({
       left -= 1;
       setSecondsLeft(left);
       if (left <= 0) timeUp();
-      else if (left <= WARN_FROM) buzz(Haptics.selectionAsync);
+      else if (left <= WARN_FROM) {
+        play('tick');
+        buzz(Haptics.selectionAsync);
+      }
     }, 1000);
   };
 
@@ -112,10 +118,12 @@ export function GameScreen({
     go('countdown');
     let n = COUNTDOWN_FROM;
     setCountdown(n);
+    play('countdown');
     clock.current = setInterval(() => {
       n -= 1;
       if (n > 0) {
         setCountdown(n);
+        play('countdown');
         return;
       }
       if (clock.current) clearInterval(clock.current);
@@ -125,6 +133,7 @@ export function GameScreen({
 
   const answer = (correct: boolean) => {
     if (phaseRef.current !== 'playing') return;
+    play(correct ? 'correct' : 'pass');
     buzz(() =>
       correct
         ? Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
@@ -144,14 +153,17 @@ export function GameScreen({
     }, FEEDBACK_MS);
   };
 
-  // Landscape while playing; back to portrait on the way out.
+  // Keep the screen on during a round. Errors are ignored: on the web the
+  // wake lock can be released before the browser has granted it.
   useEffect(() => {
-    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE).catch(() => {});
+    activateKeepAwakeAsync('round').catch(() => {});
     return () => {
-      stopTimers();
-      ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP).catch(() => {});
+      deactivateKeepAwake('round').catch(() => {});
     };
   }, []);
+
+  // Stop the clock if the round is left early.
+  useEffect(() => stopTimers, []);
 
   // Tilt input. iOS reports every axis with the opposite sign to Android.
   useEffect(() => {

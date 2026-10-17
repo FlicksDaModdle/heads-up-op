@@ -1,38 +1,38 @@
-purrfect-breeds|Purrfect Breeds|🐈||Cat breeds. Describe the fur, the face, or where it's from.
+purrfect-breeds|Cats|🐈||Cat breeds. Describe the fur, the face, or where it's from.
 Persian, Siamese, Maine Coon, Sphynx, Bengal, Ragdoll, British Shorthair, Scottish Fold, Abyssinian, Russian Blue, Burmese, Norwegian Forest Cat, Birman, Devon Rex, Cornish Rex, Exotic Shorthair, Himalayan, Savannah, Manx, American Shorthair, Tonkinese, Balinese, Egyptian Mau, Turkish Angora, Ocicat, Siberian, Bombay, Chartreux, Munchkin, Tabby
 
-top-dogs|Top Dogs|🐕||Dog breeds. Describe the size, the coat, or what it was bred for.
+top-dogs|Dogs|🐕||Dog breeds. Describe the size, the coat, or what it was bred for.
 Labrador, Golden Retriever, German Shepherd, Bulldog, Poodle, Beagle, Chihuahua, Dachshund, Husky, Corgi, Pug, Boxer, Rottweiler, Dalmatian, Great Dane, Shih Tzu, Border Collie, Doberman, Yorkshire Terrier, Pomeranian, Saint Bernard, Greyhound, Bernese Mountain Dog, Cocker Spaniel, Jack Russell, Basset Hound, Shiba Inu, Akita, Maltese, French Bulldog
 
-egg-hunt|Egg Hunt|🐣||Easter and springtime fun.
-Easter bunny, Egg hunt, Chocolate egg, Easter basket, Jelly beans, Marshmallow chicks, Egg dyeing, Daffodil, Tulip, Spring cleaning, Baby chick, Lamb, Bonnet, Hot cross bun, Egg and spoon race, Pastel colors, Rabbit ears, Carrot, Butterfly, Rain boots, Picnic, Blossom, Egg roll, Bunny hop, Golden egg, Sunday brunch, Garden, Duckling, Kite, Rainbow
+egg-hunt|Easter & Spring|🐣||Easter and springtime fun.
+Easter bunny, Egg hunt, Chocolate egg, Easter basket, Jelly beans, Marshmallow chicks, Egg dyeing, Daffodil, Tulip, Spring cleaning, Baby chick, Lamb, Bonnet, Hot cross bun, Egg and spoon race, Pastel colors, Rabbit ears, Carrot, Butterfly, Rain boots, Picnic, Blossom, Bunny hop, Golden egg, Garden, Duckling, Kite, Rainbow
 
 ukraine|Ukraine|🌻||Cities, food and culture of Ukraine. Describe it without the word!
-Kyiv, Lviv, Odesa, Kharkiv, Dnipro, Borscht, Varenyky, Holubtsi, Sunflower, Vyshyvanka, Pysanka, Bandura, Hopak, Black Sea, Carpathian Mountains, Chernobyl, Trident, Blue and yellow flag, Saint Sophia Cathedral, Golden Gate of Kyiv, Shchedryk, Wheat field, Kobzar, Dnipro River, Chicken Kyiv, Paska bread, Embroidery, Lilac, Stork, Salo
+Kyiv, Lviv, Odesa, Kharkiv, Dnipro, Borscht, Varenyky, Holubtsi, Sunflower, Vyshyvanka, Pysanka, Bandura, Hopak, Black Sea, Carpathian Mountains, Chernobyl, Trident, Blue and yellow flag, Saint Sophia Cathedral, Golden Gate of Kyiv, Shchedryk, Wheat field, Kobzar, Dnipro River, Chicken Kyiv, Paska bread, Lilac, Stork, Salo
 
-be-my-valentine|Be My Valentine|💝||Valentine's Day and all things love.
-Cupid, Bow and arrow, Heart, Roses, Chocolate box, Love letter, Teddy bear, Candy hearts, Candlelit dinner, Kiss, Hug, Valentine's card, Engagement ring, Romeo and Juliet, Soulmate, Love song, Date night, Bouquet, Champagne, Red dress, Cheek pinch, Love potion, Lock of love, Butterflies, Secret admirer, Wedding, Honeymoon, Breakfast in bed, Love bird, Pink
+be-my-valentine|Valentine's Day|💝||Valentine's Day and all things love.
+Cupid, Heart, Roses, Chocolate box, Love letter, Teddy bear, Candy hearts, Candlelit dinner, Kiss, Hug, Valentine's card, Engagement ring, Romeo and Juliet, Soulmate, Love song, Date night, Bouquet, Champagne, Red dress, Love potion, Love lock, Butterflies, Secret admirer, Wedding, Honeymoon, Breakfast in bed
 
-duet-charades|Duet Charades|💃||Act it out as a pair! Two players act; everyone else guesses.
+duet-charades|Couples Charades|💃||Act it out as a pair! Two players act; everyone else guesses.
 Ballroom dancing, Tango, Tandem bike, Three-legged race, Wedding vows, First kiss, Proposal, Piggyback ride, Arm wrestling, Thumb war, Seesaw, Rowing a boat together, Hand slapping game, Mirror game, Trust fall, Slow dance, Ice dancing, Tug of war, Pillow fight, Duet singing, Secret handshake, Carrying a couch, Fencing duel, Ventriloquist and dummy, Leapfrog, Paper rock scissors, Wheelbarrow race, Selfie together, Sharing spaghetti, Dance-off
 
-power-couples|Power Couples|💑||Famous pairs, real and fictional. Name the other half without the names!
+power-couples|Famous Couples & Duos|💑||Famous pairs, real and fictional. Name the other half without the names!
 Romeo and Juliet, Beyoncé and Jay-Z, Barack and Michelle Obama, Mickey and Minnie, Mario and Princess Peach, Kermit and Miss Piggy, Shrek and Fiona, Jack and Rose, Bonnie and Clyde, Antony and Cleopatra, Ross and Rachel, Homer and Marge, Lady and the Tramp, Harry and Meghan, William and Kate, Blake Lively and Ryan Reynolds, Johnny Cash and June Carter, John Lennon and Yoko Ono, Sonny and Cher, Gomez and Morticia, Han Solo and Leia, Lois Lane and Superman, Belle and the Beast, Aladdin and Jasmine, Cinderella and Prince Charming, Ken and Barbie, Jim and Pam, Kim and Kanye, Brad and Angelina, Taylor Swift and Travis Kelce
 
-ho-ho-ho|Ho Ho Ho|🎄||Christmas time! Describe it, act it out, or sing it.
+ho-ho-ho|Christmas|🎄||Christmas time! Describe it, act it out, or sing it.
 Santa Claus, Reindeer, Rudolph, Elf, Christmas tree, Stocking, Chimney, Snowman, Candy cane, Gingerbread house, Mistletoe, Wreath, Sleigh, North Pole, Presents, Wrapping paper, Ugly sweater, Eggnog, Christmas lights, Advent calendar, Nativity scene, Carolers, Hot chocolate, Ornament, Tinsel, Naughty list, Milk and cookies, Secret Santa, Jingle bells, Fruitcake
 
-countdown|Countdown to Midnight|🎆||New Year's Eve! Resolutions, parties and fresh starts.
-Fireworks, Countdown, Midnight kiss, Champagne toast, Ball drop, Times Square, Party hat, Noisemaker, Confetti, Resolution, Gym membership, Auld Lang Syne, Calendar, Hangover, Sparkler, New Year's Day, Fresh start, Diet, Clock, Party popper, Glitter, Year in review, Resolution list, Toast speech, Dress code, Fireworks show, Late-night snack, Happy New Year, January 1st, Lucky grapes
+countdown|New Year|🎆||New Year's Eve! Resolutions, parties and fresh starts.
+Fireworks, Countdown, Midnight kiss, Champagne toast, Ball drop, Times Square, Party hat, Noisemaker, Confetti, Resolution, Gym membership, Auld Lang Syne, Calendar, Hangover, Sparkler, New Year's Day, Fresh start, Diet, Party popper, Glitter, Year in review, Toast speech, Dress code, Late-night snack, Happy New Year
 
-holiday-movies|Holiday Movies|🎅||Festive films. Describe the plot or quote a famous line.
+holiday-movies|Christmas Movies|🎅||Festive films. Describe the plot or quote a famous line.
 Home Alone, Elf, The Grinch, A Christmas Carol, The Polar Express, Love Actually, It's a Wonderful Life, Miracle on 34th Street, The Santa Clause, Jingle All the Way, Die Hard, The Nightmare Before Christmas, Frosty the Snowman, Rudolph the Red-Nosed Reindeer, A Charlie Brown Christmas, Klaus, Arthur Christmas, The Holiday, Bad Santa, National Lampoon's Christmas Vacation, A Christmas Story, Scrooged, Gremlins, Four Christmases, Last Christmas, Noelle, The Christmas Chronicles, Fred Claus, Single All the Way, White Christmas
 
-carol-time|Carol Time|🔔||Holiday songs. Hum or sing it until they guess the title!
+carol-time|Christmas Songs|🔔||Holiday songs. Hum or sing it until they guess the title!
 Jingle Bells, Silent Night, Deck the Halls, Joy to the World, We Wish You a Merry Christmas, Rudolph the Red-Nosed Reindeer, Frosty the Snowman, Let It Snow, All I Want for Christmas Is You, Last Christmas, Feliz Navidad, White Christmas, Santa Claus Is Coming to Town, Jingle Bell Rock, Rockin' Around the Christmas Tree, O Holy Night, The Twelve Days of Christmas, Little Drummer Boy, Winter Wonderland, Sleigh Ride, Silver Bells, Have Yourself a Merry Little Christmas, It's the Most Wonderful Time of the Year, Here Comes Santa Claus, Away in a Manger, O Christmas Tree, Hark! The Herald Angels Sing, Mistletoe, Underneath the Tree, Run Rudolph Run
 
-spooky-season|Spooky Season|🎃||Halloween! Monsters, costumes and candy.
-Jack-o'-lantern, Trick or treat, Witch, Ghost, Vampire, Werewolf, Zombie, Mummy, Skeleton, Black cat, Bat, Haunted house, Spider web, Candy corn, Costume party, Broomstick, Cauldron, Frankenstein, Graveyard, Scarecrow, Pumpkin patch, Full moon, Bobbing for apples, Haunted hayride, Grim Reaper, Potion, Crystal ball, Dracula, Monster mash, Cobweb
+spooky-season|Halloween|🎃||Halloween! Monsters, costumes and candy.
+Jack-o'-lantern, Trick or treat, Witch, Ghost, Vampire, Werewolf, Zombie, Mummy, Skeleton, Black cat, Bat, Haunted house, Spider web, Candy corn, Costume party, Broomstick, Cauldron, Frankenstein, Graveyard, Scarecrow, Pumpkin patch, Full moon, Bobbing for apples, Haunted hayride, Grim Reaper, Potion, Crystal ball, Dracula, Monster mash
 
-horror-flicks|Horror Flicks|🧟||Scary movies. Describe the plot or the villain, if you dare.
+horror-flicks|Horror Movies|🧟||Scary movies. Describe the plot or the villain, if you dare.
 The Shining, Halloween, Scream, It, The Exorcist, Psycho, A Nightmare on Elm Street, Friday the 13th, The Conjuring, Saw, Get Out, Jaws, The Ring, Paranormal Activity, The Blair Witch Project, Annabelle, Insidious, Hereditary, A Quiet Place, Us, The Texas Chainsaw Massacre, Child's Play, The Silence of the Lambs, Alien, The Thing, Poltergeist, Carrie, The Babadook, Nope, Smile

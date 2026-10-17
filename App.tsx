@@ -13,9 +13,12 @@ import { ActivityIndicator, BackHandler, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { SettingsPanel } from './src/components/SettingsPanel';
+import { initSounds, setSoundEnabled } from './src/sound';
 import {
   addRound,
   customToDeck,
+  dealWords,
+  markSeen,
   defaultSettings,
   loadCustomDecks,
   loadHistory,
@@ -32,7 +35,7 @@ import { colors } from './src/theme';
 
 type Route =
   | { name: 'home' }
-  | { name: 'game'; deck: Deck; round: number }
+  | { name: 'game'; deck: Deck; words: string[]; round: number }
   | { name: 'results'; deck: Deck; results: CardResult[] }
   | { name: 'editor'; existing?: CustomDeck };
 
@@ -53,13 +56,15 @@ export default function App() {
   const reload = useCallback(async () => {
     const [s, c, h] = await Promise.all([loadSettings(), loadCustomDecks(), loadHistory()]);
     setSettings(s);
+    setSoundEnabled(s.sound);
     setCustom(c);
     setHistory(h);
   }, []);
 
   useEffect(() => {
+    initSounds();
     reload();
-    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP).catch(() => {});
+    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE).catch(() => {});
   }, [reload]);
 
   // Android back: anywhere but home goes home.
@@ -72,10 +77,17 @@ export default function App() {
     return () => sub.remove();
   }, [route.name]);
 
-  const play = (deck: Deck) => setRoute({ name: 'game', deck, round: Date.now() });
+  const play = async (deck: Deck) => {
+    const words = await dealWords(deck);
+    setRoute({ name: 'game', deck, words, round: Date.now() });
+  };
 
   const finishRound = async (deck: Deck, results: CardResult[]) => {
     setRoute({ name: 'results', deck, results });
+    await markSeen(
+      deck,
+      results.map((r) => r.word),
+    ).catch(() => {});
     await addRound({
       deckName: deck.name,
       score: results.filter((r) => r.correct).length,
@@ -86,6 +98,7 @@ export default function App() {
 
   const updateSettings = (s: Settings) => {
     setSettings(s);
+    setSoundEnabled(s.sound);
     saveSettings(s);
   };
 
@@ -114,6 +127,7 @@ export default function App() {
         <GameScreen
           key={route.round}
           deck={route.deck}
+          words={route.words}
           roundSeconds={settings.roundSeconds}
           haptics={settings.haptics}
           onQuit={() => setRoute({ name: 'home' })}

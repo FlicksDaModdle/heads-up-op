@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 
 import type { Deck } from '../game/types';
+import { play } from '../sound';
 import { colors, fonts } from '../theme';
 
 /** Tall deck card, drawn entirely in code. */
@@ -25,7 +26,10 @@ export function DeckPoster({
 }) {
   return (
     <Pressable
-      onPress={onPress}
+      onPress={onPress && (() => {
+        play('open');
+        onPress();
+      })}
       accessibilityRole="button"
       accessibilityLabel={deck.name}
       style={({ pressed }) => [
@@ -71,7 +75,10 @@ export function NewDeckPoster({
 }) {
   return (
     <Pressable
-      onPress={onPress}
+      onPress={onPress && (() => {
+        play('open');
+        onPress();
+      })}
       accessibilityRole="button"
       accessibilityLabel="New deck"
       style={({ pressed }) => [
@@ -97,7 +104,10 @@ export function PlayButton({
 }) {
   return (
     <Pressable
-      onPress={onPress}
+      onPress={() => {
+        play('tap');
+        onPress();
+      }}
       accessibilityRole="button"
       style={({ pressed }) => [style, { opacity: pressed ? 0.85 : 1 }]}
     >
@@ -121,7 +131,10 @@ export function GreenButton({
 }) {
   return (
     <Pressable
-      onPress={onPress}
+      onPress={() => {
+        play('tap');
+        onPress();
+      }}
       accessibilityRole="button"
       style={({ pressed }) => [styles.greenButton, { opacity: pressed ? 0.85 : 1 }]}
     >
@@ -144,7 +157,10 @@ export function SquareIconButton({
 }) {
   return (
     <Pressable
-      onPress={onPress}
+      onPress={() => {
+        play('tap');
+        onPress();
+      }}
       accessibilityRole="button"
       accessibilityLabel={label}
       hitSlop={8}

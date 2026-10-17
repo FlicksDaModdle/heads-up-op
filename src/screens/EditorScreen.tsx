@@ -21,6 +21,7 @@ import {
   upsertCustomDeck,
   type CustomDeck,
 } from '../game/storage';
+import { play } from '../sound';
 import { colors, customDeckColors, fonts } from '../theme';
 
 const MIN_WORDS = 3;
@@ -50,6 +51,7 @@ export function EditorScreen({
       colorIndex,
       words,
     });
+    play('save');
     onDone(true);
   };
 
@@ -111,7 +113,10 @@ export function EditorScreen({
           {customDeckColors.map((c, i) => (
             <Pressable
               key={i}
-              onPress={() => setColorIndex(i)}
+              onPress={() => {
+                play('tap');
+                setColorIndex(i);
+              }}
               accessibilityRole="button"
               accessibilityLabel={`Colour ${i + 1}`}
             >

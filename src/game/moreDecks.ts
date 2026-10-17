@@ -4,7 +4,7 @@ import type { Deck } from './types';
 export const moreDecks: Deck[] = [
   {
     id: "big-brands",
-    name: "Big Brands",
+    name: "Brands",
     emoji: "🏷️",
     colors: ["#FF8A65", "#D84315"],
     panel: "#D84315",
@@ -27,7 +27,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "mime-encore",
-    name: "Mime Time: Encore",
+    name: "Charades 2",
     emoji: "🤹",
     colors: ["#4DD0E1", "#00838F"],
     panel: "#00838F",
@@ -57,7 +57,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "animal-antics",
-    name: "Animal Antics",
+    name: "Animal Charades",
     emoji: "🐒",
     colors: ["#BA68C8", "#6A1B9A"],
     panel: "#6A1B9A",
@@ -80,7 +80,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "toon-time",
-    name: "Toon Time",
+    name: "TV Cartoons",
     emoji: "📺",
     colors: ["#AED581", "#558B2F"],
     panel: "#558B2F",
@@ -108,7 +108,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "family-grab-bag",
-    name: "Family Grab Bag",
+    name: "Family Mix",
     emoji: "🎲",
     colors: ["#FFD54F", "#F57F17"],
     panel: "#F57F17",
@@ -132,7 +132,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "home-sweet-home",
-    name: "Home Sweet Home",
+    name: "Around the House",
     emoji: "🛋️",
     colors: ["#64B5F6", "#1565C0"],
     panel: "#1565C0",
@@ -155,7 +155,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "music-legends",
-    name: "Music Legends",
+    name: "Singers & Bands",
     emoji: "🎤",
     colors: ["#F06292", "#AD1457"],
     panel: "#AD1457",
@@ -181,7 +181,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "capes-and-crooks",
-    name: "Capes & Crooks",
+    name: "Superheroes & Villains",
     emoji: "🦸",
     colors: ["#4DB6AC", "#00695C"],
     panel: "#00695C",
@@ -204,7 +204,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "toy-box",
-    name: "Toy Box",
+    name: "Toys",
     emoji: "🧸",
     colors: ["#9575CD", "#4527A0"],
     panel: "#4527A0",
@@ -229,7 +229,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "kids-corner",
-    name: "Kids' Corner",
+    name: "Kids",
     emoji: "🧒",
     colors: ["#FFB74D", "#E65100"],
     panel: "#E65100",
@@ -250,7 +250,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "recess",
-    name: "Recess",
+    name: "School",
     emoji: "🎒",
     colors: ["#E57373", "#B71C1C"],
     panel: "#B71C1C",
@@ -274,7 +274,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "party-starter",
-    name: "Party Starter",
+    name: "Party",
     emoji: "🎉",
     colors: ["#7986CB", "#283593"],
     panel: "#283593",
@@ -299,7 +299,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "crush-hour",
-    name: "Crush Hour",
+    name: "Flirty",
     emoji: "💘",
     colors: ["#FF8A65", "#D84315"],
     panel: "#D84315",
@@ -324,7 +324,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "after-dark",
-    name: "After Dark",
+    name: "Night Out",
     emoji: "🌶️",
     colors: ["#4DD0E1", "#00838F"],
     panel: "#00838F",
@@ -373,7 +373,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "mount-olympus",
-    name: "Mount Olympus",
+    name: "Greek Mythology",
     emoji: "🏛️",
     colors: ["#AED581", "#558B2F"],
     panel: "#558B2F",
@@ -395,7 +395,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "sing-along",
-    name: "Sing-Along",
+    name: "Songs",
     emoji: "🎶",
     colors: ["#FFD54F", "#F57F17"],
     panel: "#F57F17",
@@ -424,7 +424,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "snow-day",
-    name: "Snow Day Charades",
+    name: "Winter Charades",
     emoji: "❄️",
     colors: ["#64B5F6", "#1565C0"],
     panel: "#1565C0",
@@ -452,7 +452,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "city-hopper",
-    name: "City Hopper",
+    name: "Cities",
     emoji: "🏙️",
     colors: ["#F06292", "#AD1457"],
     panel: "#AD1457",
@@ -474,7 +474,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "movie-stars",
-    name: "Movie Stars",
+    name: "Actors & Actresses",
     emoji: "⭐",
     colors: ["#4DB6AC", "#00695C"],
     panel: "#00695C",
@@ -501,7 +501,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "great-outdoors",
-    name: "Great Outdoors",
+    name: "Nature & Outdoors",
     emoji: "🏕️",
     colors: ["#9575CD", "#4527A0"],
     panel: "#4527A0",
@@ -525,7 +525,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "wonders",
-    name: "Wonders of the World",
+    name: "Landmarks",
     emoji: "🗺️",
     colors: ["#FFB74D", "#E65100"],
     panel: "#E65100",
@@ -552,7 +552,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "someday-list",
-    name: "Someday List",
+    name: "Bucket List",
     emoji: "📝",
     colors: ["#E57373", "#B71C1C"],
     panel: "#B71C1C",
@@ -583,7 +583,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "holiday-mode",
-    name: "Holiday Mode",
+    name: "Travel",
     emoji: "✈️",
     colors: ["#7986CB", "#283593"],
     panel: "#283593",
@@ -609,7 +609,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "abc-123",
-    name: "ABCs & 123s",
+    name: "Letters & Numbers",
     emoji: "🔤",
     colors: ["#FF8A65", "#D84315"],
     panel: "#D84315",
@@ -632,7 +632,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "elements",
-    name: "The Elements",
+    name: "Periodic Table",
     emoji: "⚗️",
     colors: ["#4DD0E1", "#00838F"],
     panel: "#00838F",
@@ -652,7 +652,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "diamond-days",
-    name: "Diamond Days",
+    name: "Baseball",
     emoji: "⚾",
     colors: ["#BA68C8", "#6A1B9A"],
     panel: "#6A1B9A",
@@ -676,7 +676,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "hoops",
-    name: "Hoops",
+    name: "Basketball",
     emoji: "🏀",
     colors: ["#AED581", "#558B2F"],
     panel: "#558B2F",
@@ -700,7 +700,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "beautiful-game",
-    name: "The Beautiful Game",
+    name: "Soccer",
     emoji: "⚽",
     colors: ["#FFD54F", "#F57F17"],
     panel: "#F57F17",
@@ -725,7 +725,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "in-the-ring",
-    name: "In the Ring",
+    name: "Boxing",
     emoji: "🥊",
     colors: ["#64B5F6", "#1565C0"],
     panel: "#1565C0",
@@ -750,7 +750,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "gridiron",
-    name: "Gridiron",
+    name: "Football",
     emoji: "🏈",
     colors: ["#F06292", "#AD1457"],
     panel: "#AD1457",
@@ -774,7 +774,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "binge-worthy",
-    name: "Binge-Worthy",
+    name: "Streaming Shows",
     emoji: "🍿",
     colors: ["#4DB6AC", "#00695C"],
     panel: "#00695C",
@@ -799,7 +799,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "prime-time",
-    name: "Prime Time",
+    name: "TV Shows",
     emoji: "📺",
     colors: ["#9575CD", "#4527A0"],
     panel: "#4527A0",
@@ -848,7 +848,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "pit-lane",
-    name: "Pit Lane",
+    name: "Formula 1",
     emoji: "🏎️",
     colors: ["#E57373", "#B71C1C"],
     panel: "#B71C1C",
@@ -873,7 +873,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "going-for-gold",
-    name: "Going for Gold",
+    name: "Olympics",
     emoji: "🥇",
     colors: ["#7986CB", "#283593"],
     panel: "#283593",
@@ -898,7 +898,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "dino-dig",
-    name: "Dino Dig",
+    name: "Dinosaurs",
     emoji: "🦖",
     colors: ["#FF8A65", "#D84315"],
     panel: "#D84315",
@@ -923,7 +923,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "bible-stories",
-    name: "Bible Stories",
+    name: "Bible",
     emoji: "📜",
     colors: ["#4DD0E1", "#00838F"],
     panel: "#00838F",
@@ -973,7 +973,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "anime-heroes",
-    name: "Anime Heroes",
+    name: "Anime Characters",
     emoji: "⚔️",
     colors: ["#AED581", "#558B2F"],
     panel: "#558B2F",
@@ -995,7 +995,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "totally-90s",
-    name: "Totally '90s",
+    name: "The '90s",
     emoji: "📼",
     colors: ["#FFD54F", "#F57F17"],
     panel: "#F57F17",
@@ -1020,7 +1020,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "neon-80s",
-    name: "Neon '80s",
+    name: "The '80s",
     emoji: "🕹️",
     colors: ["#64B5F6", "#1565C0"],
     panel: "#1565C0",
@@ -1046,7 +1046,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "y2k",
-    name: "Y2K & the 2000s",
+    name: "The 2000s",
     emoji: "💿",
     colors: ["#F06292", "#AD1457"],
     panel: "#AD1457",
@@ -1098,7 +1098,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "famous-authors",
-    name: "Famous Authors",
+    name: "Authors",
     emoji: "✒️",
     colors: ["#9575CD", "#4527A0"],
     panel: "#4527A0",
@@ -1126,7 +1126,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "bookworm",
-    name: "Bookworm",
+    name: "Books",
     emoji: "📚",
     colors: ["#FFB74D", "#E65100"],
     panel: "#E65100",
@@ -1181,7 +1181,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "level-up",
-    name: "Level Up",
+    name: "Video Games",
     emoji: "🎮",
     colors: ["#7986CB", "#283593"],
     panel: "#283593",
@@ -1207,7 +1207,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "trailblazing-women",
-    name: "Trailblazing Women",
+    name: "Famous Women",
     emoji: "👩",
     colors: ["#FF8A65", "#D84315"],
     panel: "#D84315",
@@ -1235,7 +1235,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "lost-in-space",
-    name: "Lost in Space",
+    name: "Space",
     emoji: "🚀",
     colors: ["#4DD0E1", "#00838F"],
     panel: "#00838F",
@@ -1260,7 +1260,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "women-inventors",
-    name: "Women Who Invented",
+    name: "Inventions by Women",
     emoji: "💡",
     colors: ["#BA68C8", "#6A1B9A"],
     panel: "#6A1B9A",
@@ -1278,7 +1278,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "fifty-states",
-    name: "50 States",
+    name: "US States & Capitals",
     emoji: "🗽",
     colors: ["#AED581", "#558B2F"],
     panel: "#558B2F",
@@ -1302,7 +1302,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "mr-president",
-    name: "Mr. President",
+    name: "US Presidents",
     emoji: "🇺🇸",
     colors: ["#FFD54F", "#F57F17"],
     panel: "#F57F17",
@@ -1330,7 +1330,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "big-brains",
-    name: "Big Brains",
+    name: "Scientists",
     emoji: "🧪",
     colors: ["#64B5F6", "#1565C0"],
     panel: "#1565C0",
@@ -1387,7 +1387,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "office-life",
-    name: "Office Life",
+    name: "Office",
     emoji: "💼",
     colors: ["#4DB6AC", "#00695C"],
     panel: "#00695C",
@@ -1415,7 +1415,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "once-upon-a-time",
-    name: "Once Upon a Time",
+    name: "Fairy Tales",
     emoji: "🧚",
     colors: ["#9575CD", "#4527A0"],
     panel: "#4527A0",
@@ -1443,7 +1443,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "game-night",
-    name: "Game Night",
+    name: "Board Games",
     emoji: "♟️",
     colors: ["#FFB74D", "#E65100"],
     panel: "#E65100",
@@ -1468,7 +1468,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "phone-games",
-    name: "Phone Games",
+    name: "Mobile Games",
     emoji: "📱",
     colors: ["#E57373", "#B71C1C"],
     panel: "#B71C1C",
@@ -1493,7 +1493,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "tech-giants",
-    name: "Tech Giants",
+    name: "Tech",
     emoji: "💻",
     colors: ["#7986CB", "#283593"],
     panel: "#283593",
@@ -1517,7 +1517,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "purrfect-breeds",
-    name: "Purrfect Breeds",
+    name: "Cats",
     emoji: "🐈",
     colors: ["#FF8A65", "#D84315"],
     panel: "#D84315",
@@ -1540,7 +1540,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "top-dogs",
-    name: "Top Dogs",
+    name: "Dogs",
     emoji: "🐕",
     colors: ["#4DD0E1", "#00838F"],
     panel: "#00838F",
@@ -1565,7 +1565,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "egg-hunt",
-    name: "Egg Hunt",
+    name: "Easter",
     emoji: "🐣",
     colors: ["#BA68C8", "#6A1B9A"],
     panel: "#6A1B9A",
@@ -1614,7 +1614,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "be-my-valentine",
-    name: "Be My Valentine",
+    name: "Valentine's Day",
     emoji: "💝",
     colors: ["#FFD54F", "#F57F17"],
     panel: "#F57F17",
@@ -1638,7 +1638,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "duet-charades",
-    name: "Duet Charades",
+    name: "Couples Charades",
     emoji: "💃",
     colors: ["#64B5F6", "#1565C0"],
     panel: "#1565C0",
@@ -1665,7 +1665,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "power-couples",
-    name: "Power Couples",
+    name: "Famous Couples",
     emoji: "💑",
     colors: ["#F06292", "#AD1457"],
     panel: "#AD1457",
@@ -1695,7 +1695,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "ho-ho-ho",
-    name: "Ho Ho Ho",
+    name: "Christmas",
     emoji: "🎄",
     colors: ["#4DB6AC", "#00695C"],
     panel: "#00695C",
@@ -1721,7 +1721,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "countdown",
-    name: "Countdown to Midnight",
+    name: "New Year",
     emoji: "🎆",
     colors: ["#9575CD", "#4527A0"],
     panel: "#4527A0",
@@ -1748,7 +1748,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "holiday-movies",
-    name: "Holiday Movies",
+    name: "Christmas Movies",
     emoji: "🎅",
     colors: ["#FFB74D", "#E65100"],
     panel: "#E65100",
@@ -1775,7 +1775,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "carol-time",
-    name: "Carol Time",
+    name: "Christmas Songs",
     emoji: "🔔",
     colors: ["#E57373", "#B71C1C"],
     panel: "#B71C1C",
@@ -1805,7 +1805,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "spooky-season",
-    name: "Spooky Season",
+    name: "Halloween",
     emoji: "🎃",
     colors: ["#7986CB", "#283593"],
     panel: "#283593",
@@ -1830,7 +1830,7 @@ export const moreDecks: Deck[] = [
   },
   {
     id: "horror-flicks",
-    name: "Horror Flicks",
+    name: "Horror Movies",
     emoji: "🧟",
     colors: ["#FF8A65", "#D84315"],
     panel: "#D84315",

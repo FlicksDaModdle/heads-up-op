@@ -5,7 +5,7 @@ import type { Deck } from './types';
 const baseDecks: Deck[] = [
   {
     id: "wild-things",
-    name: "Wild Things",
+    name: "Animals",
     emoji: "🦒",
     colors: ["#7CFF6B", "#0E9F48"],
     panel: "#0E7A3A",
@@ -46,7 +46,7 @@ const baseDecks: Deck[] = [
   },
   {
     id: "big-screen",
-    name: "Big Screen",
+    name: "Movies",
     emoji: "🎬",
     colors: ["#FF5A5F", "#8E0E3C"],
     panel: "#5B0B2B",
@@ -87,7 +87,7 @@ const baseDecks: Deck[] = [
   },
   {
     id: "mime-time",
-    name: "Mime Time",
+    name: "Charades",
     emoji: "🎭",
     colors: ["#ECEFF1", "#37474F"],
     panel: "#FFFFFF",
@@ -128,7 +128,7 @@ const baseDecks: Deck[] = [
   },
   {
     id: "snack-attack",
-    name: "Snack Attack",
+    name: "Food",
     emoji: "🍕",
     colors: ["#FFE45C", "#FF8A00"],
     panel: "#FF7A00",
@@ -169,7 +169,7 @@ const baseDecks: Deck[] = [
   },
   {
     id: "famous-faces",
-    name: "Famous Faces",
+    name: "Famous Characters",
     emoji: "🦸",
     colors: ["#C77DFF", "#5A189A"],
     panel: "#3C096C",
@@ -210,7 +210,7 @@ const baseDecks: Deck[] = [
   },
   {
     id: "game-on",
-    name: "Game On",
+    name: "Sports",
     emoji: "🏀",
     colors: ["#4FC3F7", "#0D47A1"],
     panel: "#0B3D91",
@@ -251,7 +251,7 @@ const baseDecks: Deck[] = [
   },
   {
     id: "nine-to-five",
-    name: "Nine to Five",
+    name: "Jobs",
     emoji: "👩‍🚀",
     colors: ["#64FFDA", "#00796B"],
     panel: "#00594F",
@@ -292,7 +292,7 @@ const baseDecks: Deck[] = [
   },
   {
     id: "globetrotter",
-    name: "Globetrotter",
+    name: "Places",
     emoji: "🌍",
     colors: ["#FFD180", "#D84315"],
     panel: "#8D2B0B",

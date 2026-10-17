@@ -64,7 +64,7 @@ export default function App() {
   useEffect(() => {
     initSounds();
     reload();
-    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE).catch(() => {});
+    ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT_UP).catch(() => {});
   }, [reload]);
 
   // Android back: anywhere but home goes home.

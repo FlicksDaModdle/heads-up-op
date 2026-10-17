@@ -128,7 +128,7 @@ const baseDecks: Deck[] = [
   },
   {
     id: "snack-attack",
-    name: "Food",
+    name: "Food & Drinks",
     emoji: "🍕",
     colors: ["#FFE45C", "#FF8A00"],
     panel: "#FF7A00",
@@ -286,7 +286,7 @@ const baseDecks: Deck[] = [
       "Electrician",
       "Judge",
       "Babysitter",
-      "Pirate",
+      "Pharmacist",
       "Referee",
     ],
   },

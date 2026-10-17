@@ -14,7 +14,7 @@ gridiron|Football|🏈||American football! Plays, positions and game day.
 Touchdown, Quarterback, Super Bowl, Field goal, Interception, Fumble, Tackle, Hail Mary, End zone, Kickoff, Linebacker, Wide receiver, Running back, Halftime show, Cheerleader, Tailgate, Helmet, Shoulder pads, Huddle, Blitz, Sack, Punt, First down, Tom Brady, Patrick Mahomes, Referee whistle, Overtime, Two-point conversion, Fantasy football, Foam finger
 
 binge-worthy|Streaming Shows|🍿||Streaming shows. Describe the plot, the characters, or quote it.
-Stranger Things, Squid Game, The Crown, Bridgerton, Wednesday, Money Heist, The Witcher, Ozark, Black Mirror, Narcos, Orange Is the New Black, House of Cards, The Umbrella Academy, Cobra Kai, Emily in Paris, Lupin, Dark, Tiger King, Queer Eye, The Queen's Gambit, Never Have I Ever, Outer Banks, Sex Education, Ginny & Georgia, Arcane, One Piece, The Last of Us, The Mandalorian, The Boys, Severance
+Stranger Things, Squid Game, The Crown, Bridgerton, Wednesday, Money Heist, The Witcher, Ozark, Black Mirror, Narcos, Orange Is the New Black, House of Cards, The Umbrella Academy, Cobra Kai, Emily in Paris, Lupin, Dark, Tiger King, Queer Eye, The Queen's Gambit, Never Have I Ever, Outer Banks, Sex Education, Ginny & Georgia, Arcane, One Piece live-action, The Last of Us, The Mandalorian, The Boys, Severance
 
 prime-time|TV Shows|📺||Classic and modern TV series. Describe it without the title.
 Friends, The Office, Breaking Bad, Game of Thrones, Seinfeld, The Simpsons, Grey's Anatomy, Lost, How I Met Your Mother, The Big Bang Theory, Modern Family, Parks and Recreation, The Sopranos, Brooklyn Nine-Nine, Doctor Who, Sherlock, The Walking Dead, Glee, Gossip Girl, Mad Men, Downton Abbey, Fresh Prince of Bel-Air, Full House, Twin Peaks, The X-Files, Buffy the Vampire Slayer, Succession, Ted Lasso, Euphoria, Yellowstone
@@ -26,13 +26,13 @@ pit-lane|Formula 1|🏎️||Formula racing! Drivers, teams and race-day words.
 Pit stop, Pole position, Checkered flag, Safety car, Grand Prix, Monaco, Silverstone, Lewis Hamilton, Max Verstappen, Michael Schumacher, Ayrton Senna, Ferrari, Mercedes, Red Bull Racing, McLaren, Tire change, Slipstream, Podium, Champagne spray, Formation lap, Fastest lap, DRS, Steering wheel, Helmet, Race engineer, Chicane, Hairpin turn, Pit wall, Overtake, Paddock
 
 going-for-gold|Olympics|🥇||The Olympic Games! Sports, legends and ceremonies.
-Gold medal, Torch relay, Opening ceremony, Olympic rings, Podium, Gymnastics, Synchronized swimming, Pole vault, Javelin, Discus, Hurdles, Relay race, Marathon, Fencing, Archery, Diving, Weightlifting, Usain Bolt, Michael Phelps, Simone Biles, Ski jump, Bobsled, Figure skating, Curling, Speed skating, Biathlon, Trampoline, Rhythmic gymnastics, Beach volleyball, Breakdancing
+Gold medal, Torch relay, Opening ceremony, Olympic rings, Podium, Gymnastics, Synchronized swimming, Pole vault, Javelin, Discus, Hurdles, Relay race, Marathon, Fencing, Archery, Diving, Weightlifting, Usain Bolt, Michael Phelps, Simone Biles, Bobsled, Figure skating, Curling, Speed skating, Biathlon, Trampoline, Rhythmic gymnastics, Beach volleyball, Breakdancing
 
-dino-dig|Dinosaurs|🦖||Dinosaurs and prehistoric life. Stomp, roar, and describe!
+dino-dig|Dinosaurs & Prehistoric Animals|🦖||Dinosaurs and prehistoric life. Stomp, roar, and describe!
 Tyrannosaurus Rex, Triceratops, Stegosaurus, Velociraptor, Brachiosaurus, Pterodactyl, Ankylosaurus, Spinosaurus, Diplodocus, Parasaurolophus, Iguanodon, Allosaurus, Mosasaurus, Plesiosaurus, Woolly mammoth, Sabre-toothed tiger, Fossil, Paleontologist, Meteor, Extinction, Amber, Dinosaur egg, Jurassic, Cretaceous, Footprint, Volcano, Herbivore, Carnivore, Skeleton, Museum
 
 bible-stories|Bible|📜||People and stories from the Bible. Tell their story without the name.
-Noah, Moses, Adam, Eve, Abraham, David, Goliath, Solomon, Samson, Delilah, Jonah, Daniel, Joseph, Mary, Jesus, Peter, Paul, Judas, John the Baptist, Elijah, Esther, Ruth, Cain, Abel, Isaac, Jacob, Lazarus, Pontius Pilate, Noah's Ark, Ten Commandments
+Noah, Moses, Adam, Eve, Abraham, David, Goliath, Solomon, Samson, Delilah, Jonah, Daniel, Joseph, Virgin Mary, Jesus, Peter, Paul, Judas, John the Baptist, Elijah, Esther, Ruth, Cain, Abel, Isaac, Jacob, Lazarus, Pontius Pilate, Noah's Ark, Ten Commandments
 
 anime-shows|Anime Shows|🍥||Anime series. Describe the story or strike a famous pose.
 Naruto, One Piece, Dragon Ball Z, Attack on Titan, Demon Slayer, My Hero Academia, Death Note, Sailor Moon, Pokémon, Fullmetal Alchemist, Jujutsu Kaisen, Spy x Family, Hunter x Hunter, Bleach, One-Punch Man, Tokyo Ghoul, Cowboy Bebop, Neon Genesis Evangelion, Chainsaw Man, Haikyu!!, Sword Art Online, Fairy Tail, JoJo's Bizarre Adventure, Mob Psycho 100, Your Lie in April, Black Clover, Blue Lock, Frieren, Dandadan, Solo Leveling

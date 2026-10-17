@@ -8,7 +8,7 @@ animal-antics|Animal Charades|🐒||Become the animal on the card using only you
 Monkey, Penguin, Kangaroo, Elephant, Snake, Crab, Flamingo, Frog, Chicken, Gorilla, Giraffe, Bunny, Eagle, Lobster, Octopus, T-Rex, Cat, Dog, Horse, Bear, Seal, Duck, Turtle, Butterfly, Spider, Crocodile, Owl, Cow, Peacock, Sloth
 
 toon-time|TV Cartoons|📺|POPULAR|Describe the cartoon, hum the theme song, or name the characters' friends.
-The Simpsons, SpongeBob SquarePants, Scooby-Doo, Tom and Jerry, Looney Tunes, Peppa Pig, Bluey, Family Guy, Rugrats, Pokémon, Dragon Ball Z, Phineas and Ferb, Adventure Time, Gravity Falls, The Flintstones, The Jetsons, Avatar: The Last Airbender, Teenage Mutant Ninja Turtles, Dexter's Laboratory, The Powerpuff Girls, Hey Arnold!, Paw Patrol, Futurama, South Park, Bob's Burgers, Rick and Morty, Ben 10, Arthur, Animaniacs, Garfield
+The Simpsons, SpongeBob SquarePants, Scooby-Doo, Tom and Jerry, Looney Tunes, Peppa Pig, Bluey, Family Guy, Rugrats, Pokémon, Dragon Ball Z, Phineas and Ferb, Adventure Time, Gravity Falls, The Flintstones, The Jetsons, Avatar: The Last Airbender, Teenage Mutant Ninja Turtles, Dexter's Laboratory, The Powerpuff Girls, Hey Arnold!, Paw Patrol, Futurama, South Park, Bob's Burgers, Rick and Morty, Ben 10, Arthur, Animaniacs, Garfield and Friends
 
 family-grab-bag|Family Mix|🎲|NEW|A little bit of everything, easy enough for the whole family.
 Birthday cake, Rainbow, Snowman, Pirate, Robot, Dinosaur, Pizza, Bicycle, Volcano, Treasure chest, Ice cream, Castle, Mermaid, Fire truck, Unicorn, Spider, Pancakes, Rocket, Umbrella, Sunglasses, Teddy bear, Dragon, Magician, Ghost, Banana, Superhero, Trampoline, Popcorn, Waterfall, Airplane
@@ -20,7 +20,7 @@ music-legends|Singers & Bands|🎤|POPULAR|Sing a few notes, name a hit song, or
 Taylor Swift, Beyoncé, Elvis Presley, The Beatles, Michael Jackson, Madonna, Queen, Ed Sheeran, Adele, Drake, Rihanna, Bruno Mars, Lady Gaga, ABBA, Bob Marley, Eminem, Ariana Grande, Billie Eilish, Coldplay, The Rolling Stones, Whitney Houston, Justin Bieber, Dolly Parton, Frank Sinatra, Nirvana, BTS, Harry Styles, Shakira, Bad Bunny, Stevie Wonder
 
 capes-and-crooks|Superheroes & Villains|🦸||Superheroes and the villains who fight them. Describe their powers, costume, or sidekick.
-Spider-Man, Batman, Superman, Wonder Woman, Iron Man, Captain America, Thor, Hulk, Black Widow, Black Panther, The Flash, Aquaman, Wolverine, Deadpool, Doctor Strange, Captain Marvel, The Joker, Lex Luthor, Thanos, Loki, Magneto, Catwoman, Green Goblin, Harley Quinn, Venom, Darth Vader, Bane, Poison Ivy, Ant-Man, Storm
+Spider-Man, Batman, Superman, Wonder Woman, Iron Man, Captain America, Thor, Hulk, Black Widow, Black Panther, The Flash, Aquaman, Wolverine, Deadpool, Doctor Strange, Captain Marvel, The Joker, Lex Luthor, Thanos, Loki, Magneto, Catwoman, Green Goblin, Harley Quinn, Venom, Bane, Poison Ivy, Ant-Man, Storm
 
 toy-box|Toys|🧸||Toys and games for kids. Describe how you play with it!
 Yo-yo, Teddy bear, Rubik's Cube, Jigsaw puzzle, Slinky, Building blocks, Toy car, Kite, Jump rope, Hula hoop, Spinning top, Play-Doh, Doll house, Water gun, Frisbee, Skateboard, Bubbles, Marbles, Etch A Sketch, Jack-in-the-box, Rocking horse, Pop-it, Fidget spinner, Toy train, Crayons, Action figure, Balloon animal, Glow stick, Kaleidoscope, Remote control car

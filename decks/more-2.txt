@@ -23,10 +23,10 @@ movie-stars|Actors & Actresses|⭐||Actors and actresses. Name their movies or d
 Tom Hanks, Meryl Streep, Leonardo DiCaprio, Julia Roberts, Will Smith, Scarlett Johansson, Dwayne Johnson, Brad Pitt, Angelina Jolie, Tom Cruise, Jennifer Lawrence, Denzel Washington, Johnny Depp, Margot Robbie, Keanu Reeves, Zendaya, Morgan Freeman, Emma Watson, Ryan Reynolds, Sandra Bullock, Robert Downey Jr., Nicole Kidman, Jackie Chan, Marilyn Monroe, Audrey Hepburn, Charlie Chaplin, Timothée Chalamet, Viola Davis, Hugh Jackman, Jim Carrey
 
 great-outdoors|Nature & Outdoors|🏕️|NEW|Nature and outdoor adventures. Describe it or act it out.
-Campfire, Tent, Hiking boots, Waterfall, Canyon, Volcano, Glacier, Rainforest, Desert, Cave, Compass, Sleeping bag, Kayak, Fishing rod, Binoculars, Mosquito, Bear spray, Trail map, S'mores, Mountain peak, Sunrise, Meadow, River rafting, Rock climbing, Lighthouse, Pine cone, Wildflowers, Thunderstorm, Rainbow, Northern lights
+Campfire, Tent, Hiking boots, Waterfall, Canyon, Volcano, Glacier, Rainforest, Desert, Cave, Compass, Sleeping bag, Kayak, Fishing rod, Binoculars, Mosquito, Bear spray, Trail map, S'mores, Mountain peak, Sunrise, Meadow, River rafting, Rock climbing, Pine cone, Wildflowers, Thunderstorm, Rainbow, Northern lights
 
 wonders|Landmarks|🗺️||Famous sights to see. Say where it is or what it looks like.
-Eiffel Tower, Great Wall of China, Taj Mahal, Colosseum, Statue of Liberty, Machu Picchu, Pyramids of Giza, Stonehenge, Grand Canyon, Niagara Falls, Mount Everest, Big Ben, Sydney Opera House, Christ the Redeemer, Leaning Tower of Pisa, Petra, Golden Gate Bridge, Mount Fuji, Angkor Wat, Great Barrier Reef, Burj Khalifa, Acropolis, Chichen Itza, Victoria Falls, Sagrada Família, Times Square, Easter Island statues, Mount Rushmore, Hollywood Sign, Northern Lights
+Eiffel Tower, Great Wall of China, Taj Mahal, Colosseum, Statue of Liberty, Machu Picchu, Pyramids of Giza, Stonehenge, Grand Canyon, Niagara Falls, Mount Everest, Big Ben, Sydney Opera House, Christ the Redeemer, Leaning Tower of Pisa, Petra, Golden Gate Bridge, Mount Fuji, Angkor Wat, Great Barrier Reef, Burj Khalifa, Acropolis, Chichen Itza, Victoria Falls, Sagrada Família, Times Square, Easter Island statues, Mount Rushmore, Hollywood Sign
 
 someday-list|Bucket List|📝||Bucket-list dreams. Describe the adventure!
 Skydiving, Swimming with dolphins, Seeing the Northern Lights, Running a marathon, Hot air balloon ride, Climbing Kilimanjaro, Learning to surf, Writing a book, Road trip across the country, Bungee jumping, Visiting all seven continents, Scuba diving, Going on safari, Riding a camel, Getting a tattoo, Learning a language, Sleeping under the stars, Zip lining, Seeing a volcano, Flying first class, Meeting a celebrity, Swimming with sharks, Owning a farm, Learning piano, Going to space, Walking the Great Wall, Attending the Olympics, Backpacking Europe, Paragliding, Building a treehouse
@@ -34,7 +34,7 @@ Skydiving, Swimming with dolphins, Seeing the Northern Lights, Running a maratho
 holiday-mode|Travel|✈️|NEW|Travel and vacation words. Describe your dream trip!
 Passport, Suitcase, Airport security, Jet lag, Boarding pass, Hotel lobby, Room service, Beach towel, Sunscreen, Souvenir, Postcard, Cruise ship, Road trip, Travel pillow, Tour guide, Duty free, Backpacker, All-inclusive, Flip-flops, Snorkel, Customs, Window seat, Theme park, Lost luggage, Map, Rental car, Infinity pool, Selfie spot, Time zone, Layover
 
-abc-123|Letters & Numbers|🔤||Letters and numbers! Draw it in the air, make it with your body, or give hints.
+abc-123|Letters, Numbers & Symbols|🔤||Letters and numbers! Draw it in the air, make it with your body, or give hints.
 Letter A, Letter B, Letter C, Letter D, Letter E, Letter K, Letter M, Letter O, Letter Q, Letter S, Letter T, Letter W, Letter X, Letter Y, Letter Z, Number 0, Number 1, Number 2, Number 3, Number 4, Number 5, Number 6, Number 7, Number 8, Number 9, Number 10, Number 100, A dozen, Infinity, Pi
 
 elements|Periodic Table|⚗️||Periodic table time! Describe what it's used for or where you find it.

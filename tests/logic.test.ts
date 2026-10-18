@@ -170,3 +170,12 @@ test('fitText never breaks inside a word', () => {
   assert.deepEqual(fit.lines, ['Supercalifragilisticexpialidocious']);
   assert.ok(fit.fontSize >= 12);
 });
+
+test('fitText keeps every word of a long phrase (regression: "Venus the" cut-off)', () => {
+  for (const phrase of ['Venus the goddess', 'Seven Wonders of the World', 'US States & Capitals']) {
+    const fit = fitText(phrase, 560, 220, 110);
+    assert.equal(fit.lines.join(' '), phrase);
+    const longest = Math.max(...fit.lines.map((l) => l.length));
+    assert.ok(longest * CHAR_WIDTH * fit.fontSize <= 560 + 1, `${phrase} is too wide`);
+  }
+});

@@ -7,12 +7,61 @@ import {
   Text,
   View,
   type StyleProp,
+  type TextStyle,
   type ViewStyle,
 } from 'react-native';
 
+import { DISPLAY_CHAR_WIDTH, fitText, LINE_HEIGHT } from '../game/fitText';
 import type { Deck } from '../game/types';
 import { play } from '../sound';
 import { colors, fonts } from '../theme';
+
+/**
+ * Text sized to fit a box: line breaks and font size come from fitText, and
+ * each line is its own single-line Text that may shrink a little more but
+ * can never wrap or be cut off.
+ */
+export function FittedText({
+  text,
+  width,
+  height,
+  maxSize,
+  style,
+  charWidth,
+}: {
+  text: string;
+  width: number;
+  height: number;
+  maxSize: number;
+  style: StyleProp<TextStyle>;
+  charWidth?: number;
+}) {
+  const fit = fitText(text, width, height, maxSize, charWidth);
+  return (
+    <View style={{ alignItems: 'center' }}>
+      {fit.lines.map((line, i) => (
+        <Text
+          key={i}
+          style={[
+            style,
+            {
+              width,
+              textAlign: 'center',
+              fontSize: fit.fontSize,
+              lineHeight: Math.round(fit.fontSize * LINE_HEIGHT),
+              includeFontPadding: false,
+            },
+          ]}
+          numberOfLines={1}
+          adjustsFontSizeToFit
+          minimumFontScale={0.5}
+        >
+          {line}
+        </Text>
+      ))}
+    </View>
+  );
+}
 
 /** Tall deck card, drawn entirely in code. */
 export const DeckPoster = memo(DeckPosterView, (a, b) => a.deck === b.deck && a.width === b.width);
@@ -55,13 +104,14 @@ function DeckPosterView({
         <Text style={[styles.posterEmoji, { fontSize: width * 0.48 }]}>
           {deck.emoji}
         </Text>
-        <Text
-          style={[styles.posterTitle, { fontSize: width * 0.17 }]}
-          numberOfLines={2}
-          adjustsFontSizeToFit
-        >
-          {deck.name}
-        </Text>
+        <FittedText
+          text={deck.name}
+          width={width - 12}
+          height={width * 0.42}
+          maxSize={width * 0.17}
+          charWidth={DISPLAY_CHAR_WIDTH}
+          style={styles.posterTitle}
+        />
       </LinearGradient>
     </Pressable>
   );
@@ -180,9 +230,7 @@ export function SquareIconButton({
 export function WordTile({ word }: { word: string }) {
   return (
     <View style={styles.wordTile}>
-      <Text style={styles.wordTileText} numberOfLines={2} adjustsFontSizeToFit>
-        {word}
-      </Text>
+      <FittedText text={word} width={104} height={58} maxSize={20} style={styles.wordTileText} />
     </View>
   );
 }
@@ -323,12 +371,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 3 },
     elevation: 5,
   },
-  wordTileText: {
-    fontFamily: fonts.black,
-    fontSize: 20,
-    color: colors.white,
-    textAlign: 'center',
-  },
+  wordTileText: { fontFamily: fonts.black, color: colors.white },
   gameCard: {
     flex: 1,
     overflow: 'hidden',

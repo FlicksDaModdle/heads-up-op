@@ -14,8 +14,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { StripedCard } from '../components/ui';
-import { fitText, LINE_HEIGHT } from '../game/fitText';
+import { FittedText, StripedCard } from '../components/ui';
 import { TiltDetector } from '../game/tilt';
 import type { CardResult, Deck } from '../game/types';
 import { play } from '../sound';
@@ -205,19 +204,9 @@ export function GameScreen({
         ? colors.timesUp
         : colors.card;
 
-  const big = (text: string, maxSize: number) => {
-    const fit = fitText(text, boxW, boxH, maxSize);
-    return (
-      <Text
-        style={[styles.big, { fontSize: fit.fontSize, lineHeight: fit.fontSize * LINE_HEIGHT }]}
-        numberOfLines={fit.lines.length}
-        adjustsFontSizeToFit
-        minimumFontScale={0.6}
-      >
-        {fit.lines.join('\n')}
-      </Text>
-    );
-  };
+  const big = (text: string, maxSize: number) => (
+    <FittedText text={text} width={boxW} height={boxH} maxSize={maxSize} style={styles.big} />
+  );
 
   const showTimer = phase === 'playing' || phase === 'feedback';
   const warning = secondsLeft <= WARN_FROM;

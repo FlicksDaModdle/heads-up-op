@@ -1,5 +1,11 @@
-/** Average glyph width of Nunito Black, as a fraction of the font size. */
-export const CHAR_WIDTH = 0.62;
+/**
+ * Average glyph width of Nunito Black, as a fraction of the font size.
+ * Deliberately on the wide side: overestimating only makes text a little
+ * smaller, underestimating made long phrases wrap and get cut off.
+ */
+export const CHAR_WIDTH = 0.68;
+/** The same for Lilita One (deck titles), a condensed display face. */
+export const DISPLAY_CHAR_WIDTH = 0.56;
 /** Line height used for the big card text, as a multiple of the font size. */
 export const LINE_HEIGHT = 1.08;
 
@@ -34,7 +40,13 @@ function splitInto(words: string[], n: number): string[] {
  * Doing this ourselves, rather than relying on each platform's
  * shrink-to-fit, keeps words the same size and truly centered everywhere.
  */
-export function fitText(text: string, width: number, height: number, maxSize: number): Fit {
+export function fitText(
+  text: string,
+  width: number,
+  height: number,
+  maxSize: number,
+  charWidth: number = CHAR_WIDTH,
+): Fit {
   const words = text.trim().split(/\s+/);
   let best: Fit = { lines: [text], fontSize: 0 };
   for (let n = 1; n <= Math.min(3, words.length); n++) {
@@ -42,7 +54,7 @@ export function fitText(text: string, width: number, height: number, maxSize: nu
     const longest = Math.max(...lines.map((l) => l.length));
     const size = Math.min(
       maxSize,
-      width / (longest * CHAR_WIDTH),
+      width / (longest * charWidth),
       height / (lines.length * LINE_HEIGHT),
     );
     // Prefer fewer lines unless more lines allow clearly bigger text.
